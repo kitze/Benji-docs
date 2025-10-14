@@ -40,6 +40,7 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 
 5. **Widgets & Dashboards**
    - Include only when the feature exposes actual widgets or dashboard tiles.
+   - Refer to them by their current placement (e.g., sidebar widget, My Day widget) rather than legacy names.
    - For each widget, describe what it shows, how it updates (live vs. manual), configuration limits, and the exact steps to add/remove it.
 
 6. **Alfred & Quick Actions**
@@ -50,16 +51,21 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - Include this section only when the feature actually runs background jobs, AI assistants, or automations.
    - When applicable, explain how users trigger or monitor them, mention refresh steps, required integrations (e.g., OpenAI key), and where results surface in the UI.
 
-8. **Timeline, Points & Privacy**
+8. **Keyboard Shortcuts**
+   - Always list shortcuts relevant to the feature.
+   - Check the main Benji repo (`~/webdev/benji`) for global shortcuts (e.g., `app/hooks/useGlobalHotkeys.tsx`, settings keyboard shortcut enums) and any feature-specific bindings.
+   - Mention how to trigger them and when they’re optional versus required.
+
+9. **Timeline, Points & Privacy**
    - Specify what goes to the timeline, when it triggers (goal completion, manual share), and the exact point value it awards.
    - Identify every privacy toggle or sharing preference that controls those posts, including default audiences and how to change them.
    - Note whether timeline posts can be disabled entirely, kept private, or scoped to followers.
 
-9. **Integrations & Dependencies**
+10. **Integrations & Dependencies**
    - Note cross-feature links (summary rings, planner reminders, automations, etc.). Highlight planner scheduling or routine chaining when duration settings matter.
    - Call out how unit/timezone settings or other global preferences influence the feature.
 
-10. **Tips & Edge Cases**
+11. **Tips & Edge Cases**
    - Provide concise, actionable tips (templates for repetitive entries, bypass toggles for exceptions).
    - Warn about non-obvious behavior (weighted totals, backdated goals, refresh requirements).
 
@@ -80,3 +86,4 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Grouped related information (lists & sharing, AI, templates, goals, customization, etc.) so each topic appears in one clear section.
 - [ ] Clarified when keyboard shortcuts are optional versus the only way to act.
 - [ ] Omitted empty sections—if a topic genuinely has nothing to say, don’t include a placeholder.
+- [ ] Documented feature-relevant keyboard shortcuts (global + local) with sources.
