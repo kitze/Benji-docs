@@ -1,0 +1,59 @@
+---
+title: Food Tracking
+description: Capture meals, macros, and templates while keeping sharing under your control
+---
+
+## Access & Activation
+
+- The Food feature is part of the Benji Pro plan. Enable it from `Settings → Features → Food`, then toggle it on. From the same modal you can pin Food to the sidebar or mobile toolbar, and enable **Show a home widget** when you want a dashboard tile.
+- If the Food page still hides after enabling, refresh and confirm the feature stays toggled to on in Settings before proceeding.
+
+## Logging Meals
+
+- Use the Food page day navigator to choose the date you’re logging for, then hit `Log food` or open the floating action button. The form prefills the selected day and supports backdating.
+- The meal form adapts to your preferences: name, photo upload, time, macros, portion size, meal type, healthiness, reasons, and “aligned with goals” can all be toggled in `Settings → Features → Food → Customize food tracking form`. Every toggle is on by default.
+- Each entry stores macros, on/off-path status, optional reasons, and the photo. After saving, Benji queues “Analyze with AI” in the background if you’ve connected an OpenAI key; otherwise you can trigger it manually from the meal’s menu to estimate macros, portion, healthiness, and title.
+- The card menu (•••) beside every meal lets you duplicate a meal, analyze it with AI, or save it as a template for faster logging later.
+
+## Feature Controls on the Food Page
+
+- Toggle `Show time since last meal`, `Show food score`, `Show thumbs up/down`, and related UI switches in the Food settings popover. When enabled, Benji displays time gaps between meals, a daily score ring, and green/red alignment chips.
+- The sidebar shows aggregated stats: alignment ring, food score ring, and macro totals. Macro charts appear once macros are enabled in form settings.
+- Daily macro goals live in the sidebar under **Macro goals**. Each goal takes effect from its start date forward until you create a newer one, so you can adjust targets without rewriting past days.
+
+## Templates & Macro Goals
+
+- Templates live in the **Templates** popover (top right of the page). Selecting one opens the logging modal prefilled with its values, including on/off-path state and macros.
+- Convert any logged meal into a reusable template via the card menu → **Save as a template**. Use **Analyze with AI** first if you want accurate macros copied into the template.
+- Macro goals are created through the sidebar button **Create a macro goal**. You can define protein, carbs, fat, and calories targets per start date; the active goal is chosen automatically based on the day you’re viewing.
+
+## Global Settings & Privacy
+
+- Field-level visibility (name, image, time, macros, portion size, meal type, healthiness, reasons, alignment, score, thumbs, time-since-last-meal) all live in the `Settings → Features → Food` pane so you can tailor the form and list layout.
+- Timeline visibility follows the Meals privacy control at `Settings → Privacy → Meals`. It defaults to `Private`; set it to `Followers` or `Public` to let others see Food posts in their timeline.
+- AI enhancements require an OpenAI key stored under `Settings → AI`. Without a key, the analyze action safely no-ops.
+
+## Widgets & Dashboards
+
+- **Home dashboard**: Enable **Show a home widget** for Food in `Settings → Features → Food`, then arrange it in My Day or the dashboard layout. The widget lists today’s meals with calories and macro badges.
+- **Summary page**: Flip on `Show food events` in the summary sidebar to display the Food score ring and meal count for the selected day.
+- **My Day**: Add the Food widget from the My Day widget picker to see recent meals and quick actions; it links back to the Food page via the widget header.
+
+## Alfred & Quick Actions
+
+- Alfred always includes a `Log food` command that opens the meal form with the current date.
+- Alfred also mirrors saved templates. Typing a template name runs the command, creates a meal from the template, and opens it for edits immediately.
+- Default shortcuts let you open Food feature settings or pin the feature to navigation directly from Alfred.
+
+## Timeline, Points & Privacy
+
+- Food timeline posts are created whenever a `FoodEvent` post exists—logging from a template triggers one automatically. These posts obey the `Meals` privacy setting, so keep it on `Private` if you don’t want them to appear on the public timeline.
+- Every food log awards 3 points in the timeline leaderboard (`Food log` in the point system), whether or not you share it publicly.
+- Deleting a meal also removes any associated timeline post, so you can clean up the timeline by deleting or editing the underlying log.
+
+## Tips & Edge Cases
+
+- Turn on `Show time since last meal` to spot long gaps; Benji calculates the distance between consecutive logs in real time.
+- Use duplication for recurring meals that change slightly—edit the clone before saving so you don’t overwrite the original.
+- If AI analysis doesn’t populate macros, double-check that the log has a photo (for better estimates) and that your OpenAI key is valid.
+- When switching macro targets mid-program, create a new macro goal with the new start date instead of editing the old one; historical days will keep their original targets.
