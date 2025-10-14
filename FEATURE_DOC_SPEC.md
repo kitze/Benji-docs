@@ -9,12 +9,13 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - **Read supporting code**: Scan `pages/my/<feature>/**`, `app/features/<feature>/**`, Spotlight/Alfred command definitions, privacy settings, goal/template modules, and point-system config. We want verified behavior, not implementation details.
 - **Trigger edge behaviors**: Complete a goal, switch units, post to the public timeline, or toggle privacy settings to observe downstream effects.
 - **Capture activation paths**: Record the exact clicks required to enable the feature, surface its widgets, expose related toggles, and adjust who can see timeline posts so the doc can spell them out verbatim.
+- **Stay user-facing**: Avoid database names, internal jargon, or implementation talk. Everything should read like guidance for a user, not a developer.
 
 ## Required Sections for Each Feature Page
 
 1. **Access & Activation**
    - Explain how to enable the feature if it’s hidden.
-   - Mention prerequisites (plan tier, feature flag, device requirements).
+   - Note any feature flags, device requirements, or permissions—never mention pricing tiers or plans.
 
 2. **Core Workflow**
    - Describe the default logging/usage flow (prefilled fields, save behavior, syncing).
@@ -39,16 +40,20 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - Document Alfred commands: how to launch them, what they prefill, and which templates appear.
    - Mention other quick launchers (menu bar, Raycast, mobile widgets) if supported.
 
-7. **Timeline, Points & Privacy**
+7. **Automation & AI** (include when relevant)
+   - Describe any background jobs, AI helpers, or automations and how users trigger or monitor them.
+   - Note refresh steps, required integrations (e.g., OpenAI key), and how results surface in the UI.
+
+8. **Timeline, Points & Privacy**
    - Specify what goes to the timeline, when it triggers (goal completion, manual share), and the exact point value it awards.
    - Identify every privacy toggle or sharing preference that controls those posts, including default audiences and how to change them.
    - Note whether timeline posts can be disabled entirely, kept private, or scoped to followers.
 
-8. **Integrations & Dependencies**
+9. **Integrations & Dependencies**
    - Note cross-feature links (summary rings, planner reminders, automations, etc.).
    - Call out how unit/timezone settings or other global preferences influence the feature.
 
-9. **Tips & Edge Cases**
+10. **Tips & Edge Cases**
    - Provide concise, actionable tips (templates for repetitive entries, bypass toggles for exceptions).
    - Warn about non-obvious behavior (weighted totals, backdated goals, refresh requirements).
 
@@ -59,6 +64,9 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Documented timeline behavior, point value, and the privacy setting that controls visibility (with default state).
 - [ ] Cataloged all widgets (home, summary, sidebar, etc.) and how to add/remove each one.
 - [ ] Described Alfred commands or other shortcuts tied to the feature.
+- [ ] Covered automation/AI behavior (if present) in a single section, including refresh steps and setup requirements.
 - [ ] Explained unit, timezone, or conversion rules that affect totals.
 - [ ] Captured any templates, automation hooks, or recurring tools specific to the feature.
 - [ ] Sanity-checked the write-up against real behavior (no assumptions, no filler).
+- [ ] Kept language user-facing—no database tables, internal class names, or engineering jargon.
+- [ ] Grouped related information (AI, templates, goals, customization, etc.) so each topic appears in one clear section.
