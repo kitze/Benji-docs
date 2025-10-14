@@ -4,6 +4,7 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 
 ## Prep Work Before Writing
 
+- **Review the codebase**: Do a thorough search through `~/webdev/benji` so each statement in the doc reflects real behaviour.
 - **Verify visibility**: Confirm whether the feature is hidden until toggled on. Note the exact settings path (feature flags, privacy, etc.) and the default state. Reference the precise navigation (for example `Settings → Features`) so readers know where to look.
 - **Tour the surfaces**: Open the feature’s main page, any widgets it powers, and related summary or dashboard cards. Capture screenshots/notes even if they don’t ship in the doc.
 - **Read supporting code**: Scan `pages/my/<feature>/**`, `app/features/<feature>/**`, Spotlight/Alfred command definitions, privacy settings, goal/template modules, and point-system config. We want verified behavior, not implementation details.
@@ -13,6 +14,10 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - **Cluster related topics**: Keep configuration, sharing, AI, lists, and goals in discrete sections so readers don’t bounce between bullets to gather the full story.
 
 ## Required Sections for Each Feature Page
+
+0. **What It Does**
+   - Start with a short paragraph that explains the feature’s purpose, core value, and how it feels to use before diving into setup or workflows.
+   - Keep it user-facing—think of it as the elevator pitch that frames the rest of the doc.
 
 1. **Access & Activation**
    - Explain how to enable the feature if it’s hidden.
@@ -59,6 +64,8 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - Warn about non-obvious behavior (weighted totals, backdated goals, refresh requirements).
 
 ## Writing Checklist
+
+- [ ] Opened with a concise “What It Does” overview that explains the feature in plain language.
 
 - [ ] Confirmed how players enable the feature and captured the exact settings path.
 - [ ] Listed every on-page setting (goals, templates, filters) with default behavior.
