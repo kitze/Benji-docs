@@ -1,0 +1,9 @@
+{
+  "title": "📘 Benji Docs",
+  "icon": "📘",
+  "root": true,
+  "pages": [
+    "index",
+    "features"
+  ]
+}

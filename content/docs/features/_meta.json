@@ -1,0 +1,12 @@
+{
+  "title": "✨ Features",
+  "icon": "✨",
+  "defaultOpen": true,
+  "pages": [
+    "activities",
+    "food",
+    "habits",
+    "hydration",
+    "routines"
+  ]
+}

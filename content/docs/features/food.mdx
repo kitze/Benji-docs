@@ -1,72 +1,64 @@
 ---
-title: Food Tracking
+title: "🍽️ Food Tracking"
 description: Capture meals, macros, and templates while keeping sharing under your control
 ---
 
-## Access & Activation
+## 🚪 Access & Activation
 
 - Enable the Food feature from `Settings → Features → Food`, then toggle it on. From the same modal you can pin Food to the sidebar or mobile toolbar, and enable **Show a home widget** when you want a dashboard tile.
 - If the Food page still hides after enabling, refresh and confirm the feature stays toggled to on in Settings before proceeding.
 
-## Logging Meals
+## 🧭 Core Workflow
 
 - Use the Food page day navigator to choose the date you’re logging for, then hit `Log food` or open the floating action button. The form prefills the selected day and supports backdating.
 - Every meal can include macros, on/off-path status, optional reasons, and photos—incoming sections explain how to slim the form down or let Benji fill in details for you.
 - The card menu (•••) beside every meal lets you duplicate a meal, analyze it with AI, or save it as a template for faster logging later.
 
-## Customize the Meal Form
+## 🛠️ In-Feature Settings
 
 - Open `Settings → Features → Food → Customize food tracking form` to choose which fields appear. Switch off whatever you don’t need (name, photo, time, macros, portion size, meal type, healthiness, reasons, “aligned with goals”) so the form stays lightweight.
 - The same panel controls what shows in the list: score ring, thumbs up/down chart, and “time since last meal.” Toggling these affects both the cards and the sidebar stats immediately.
+- Templates live in the **Templates** popover (top right). Selecting one opens the meal form prefilled with its saved values—including on-path status, macros, portion, and meal type. Convert any log into a reusable template via the meal menu → **Save as a template**.
+- Create daily macro goals from the sidebar’s **Create a macro goal** button. Each goal activates on its start date and stays in effect until you add a newer goal, keeping historical days intact. Adjusting targets mid-program? Add a new goal instead of editing the old one so Benji preserves history.
+- The sidebar stats—alignment ring, food score ring, macro totals, and “time since last meal”—mirror whichever toggles you enable in this settings panel.
 
-## AI Analysis
+## 🤖 Automation & AI
 
 - Benji runs “Analyze with AI” in the background after each save. The job estimates macros, healthiness, and portion size, then updates the meal when results are ready.
 - When the background run finishes, refresh the data with `Option/Alt + R` (or reload the page) to see the updated numbers.
 - You can trigger analysis manually from the meal menu if you edited details later.
 - Connect an OpenAI key in `Settings → AI` to enable these estimates; without a key the action is safely skipped.
 
-## Templates
-
-- Templates live in the **Templates** popover (top right). Selecting one opens the meal form prefilled with its saved values—including on-path status, macros, portion, and meal type.
-- Convert any log into a reusable template via the meal menu → **Save as a template**. Run AI analysis first if you want the template to inherit estimated macros.
-- Alfred mirrors these templates: summon Alfred, type the template name, press enter, and Benji instantly logs the meal (the modal opens for any quick edits).
-
-## Macro Goals
-
-- Create daily macro goals from the sidebar’s **Create a macro goal** button. Each goal activates on its start date and stays in effect until you add a newer goal, keeping historical days intact.
-- Adjusting targets mid-program? Add a new goal with the updated date instead of editing the old one—Benji will automatically apply the correct goal to each day.
-- The sidebar and macro charts reflect whichever goal is active for the date you’re viewing.
-
-## Daily Stats & Toggles
-
-- The sidebar shows aggregated stats: alignment ring, food score ring, and macro totals. These appear when their matching toggles are enabled in the settings popover.
-- Turn on `Show time since last meal` to see how long it’s been between entries; Benji calculates the gaps in real time.
-
-## Global Settings & Privacy
+## 🔐 Global Settings & Privacy
 
 - Feature switching and field visibility all live under `Settings → Features → Food`.
 - Timeline visibility follows the Meals privacy control at `Settings → Privacy → Meals`. It defaults to `Private`; switch to `Followers` or `Public` if you want meal updates to appear in other timelines.
 
-## Widgets & Dashboards
+## 📊 Widgets & Dashboards
 
 - **Home dashboard**: Enable **Show a home widget** for Food in `Settings → Features → Food`, then arrange it in My Day or the dashboard layout. The widget lists today’s meals with calories and macro badges.
 - **Summary page**: Flip on `Show food events` in the summary sidebar to display the Food score ring and meal count for the selected day.
 - **My Day**: Add the Food widget from the My Day widget picker to see recent meals and quick actions; it links back to the Food page via the widget header.
 
-## Alfred & Quick Actions
+## ⚡ Alfred & Quick Actions
 
 - Alfred always includes a `Log food` command that opens the meal form with the current date.
-- Alfred also mirrors saved templates. Typing a template name runs the command, creates a meal from the template, and opens it for edits immediately.
+- Alfred also mirrors saved templates. Typing a template name runs the command, creates a meal from the template, and opens it for edits immediately—perfect for the repetitive meals you captured in the templates popover.
 - Default shortcuts let you open Food feature settings or pin the feature to navigation directly from Alfred.
 
-## Timeline, Points & Privacy
+## 🏆 Timeline & Points
 
 - Benji can share meal updates automatically when you log from a template or choose to post; those updates follow the Meals privacy setting.
 - Every food log awards 3 points in the timeline leaderboard (`Food log` in the point system), whether or not you share it publicly.
 - Delete or edit the meal to remove its timeline entry at the same time.
 
-## Tips & Edge Cases
+## 🔗 Integrations & Dependencies
+
+- Macro goals and food score data surface across Benji: the Summary page ring, My Day widget tiles, and the timeline leaderboard all reuse the same underlying totals.
+- Planner events that reference meals respect the same privacy and point rules, so keeping your settings tidy ensures downstream widgets stay accurate.
+- Templates and AI analysis rely on shared services (OpenAI keys, template storage), so confirm those integrations before troubleshooting missing data.
+
+## 💡 Tips & Edge Cases
 
 - Duplicate meals for recurring favorites, then adjust before saving so the original stays intact.
 - If AI analysis doesn’t populate macros, make sure the log has enough detail (ideally a photo) and that your OpenAI key is still valid, then refresh with `Option/Alt + R`.

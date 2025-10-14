@@ -1,18 +1,18 @@
 ---
-title: Routines
+title: "🧩 Routines"
 description: Chain habits and ad-hoc tasks into guided flows you can replay, share, and schedule
 ---
 
-## Why Routines Matter
+## 🌟 Why Routines Matter
 
 Routines are playbooks. They string together habits and one-off tasks so you can run the same sequence without rebuilding it—perfect for morning rituals, shutdown checklists, pre-travel prep, or packing a gym bag. Some routines hold nothing but habits; others mix habits with item steps; a few are entirely items for the occasions you only tackle before a big event. Benji keeps the order, timing, and collaboration predictable every time you press play.
 
-## Access & Activation
+## 🚪 Access & Activation
 
 - Turn on Routines via `Settings → Features → Routines`, then choose whether to pin it to the sidebar, mobile toolbar, or surface the routines widget on your dashboard.
 - Reload once if the page doesn’t appear immediately—the toggle persists per user.
 
-## Building A Routine
+## 🧭 Core Workflow
 
 - Click **Create routine** to open the form. Set a name and emoji, pick a time of day (Any, Morning, Afternoon, Evening, Night), choose the days it should appear (all enabled by default), and optionally start it paused.
 - Time-of-day and day selections feed the routine filters so it shows up exactly when you need it—in the list, widget, and player.
@@ -21,18 +21,18 @@ Routines are playbooks. They string together habits and one-off tasks so you can
   - **Item steps** are one-off tasks such as “Pack chargers” or “Open windows”. They’re perfect for checklists you don’t want stored as habits. Give them durations to keep totals accurate.
 - Drag to reorder steps; the editor constantly updates the routine’s total duration so you know how long the full flow takes before scheduling it or dropping it into the planner.
 
-## Habit Steps vs. Item Steps
+### 🧱 Habit Steps vs. Item Steps
 
 - **Habit steps**: best for ongoing habits you already track. They award habit points, respect habit privacy, and show up in habit stats. Use them when the step should influence your habit grade or appear elsewhere in Benji.
 - **Item steps**: standalone checklist entries that live only inside the routine. They don’t affect habit streaks or points, which makes them ideal for packing lists, travel prep, or occasional chores that you still want in the flow.
 
-## Collaboration & Sharing
+## 🗂️ Collaboration & Sharing
 
 - Open a routine’s menu → **Sharing** to invite teammates. Invited users can play the routine, contribute completions, and see active progress.
 - Routine invites surface in the header (desktop) and filters popover (mobile) so you can accept or decline on any device.
 - Habits inside a shared routine keep their own privacy: assigned habits still belong to their original owners, and completions respect each habit’s privacy setting.
 
-## Running A Routine
+## ▶️ Running a Routine
 
 - Click a routine card to start a run. Every launch creates (or resumes) a routine instance with a progress bar, completed/remaining counts, and quick navigation.
 - Active instances appear in the left sidebar so you can reopen them in a modal while you work elsewhere in Benji.
@@ -43,21 +43,41 @@ Routines are playbooks. They string together habits and one-off tasks so you can
 - Habit steps update the underlying habit log instantly; item steps only affect the routine instance. Jump back or forward, or use **Reset** to clear the whole instance without touching the routine definition.
 - Routine instances remember your position automatically. If you pause halfway through, reopening the instance picks up exactly where you left off.
 
-## Scheduling & Planner Integration
+## 🗓️ Scheduling & Planner Integration
 
 - Routine duration equals the sum of step durations. When you drop a routine onto the planner calendar, Benji blocks out that amount of time so your schedule matches reality.
 - Planner events created from routines link back to the player, making it easy to start the flow when the calendar reminder fires.
 
-## Widgets & Dashboards
+## 📊 Widgets & Dashboards
 
 - **Routines widget** (My Day): shows routines matching the current time (or “Any” time) and lets you launch them instantly. Widget settings let you include/exclude “Any” time routines or show routines created by collaborators.
 - Routines inherit the same durations you defined in the editor, so scheduling them on My Day or in Planner keeps your dashboard timeline accurate.
 
-## Alfred & Quick Actions
+## ⚡ Alfred & Quick Actions
 
 - Alfred includes commands for `Create routine`, opening specific routines, or launching the player. Spotlight also surfaces pending routine invites and recently active runs for fast access.
 
-## Pausing Routines
+## 🔐 Global Settings & Privacy
+
+- Feature visibility, widget toggles, and invite management all live under `Settings → Features → Routines`.
+- Routines themselves don’t post to the timeline, but habit steps still respect each habit’s privacy and point rules when you mark them done from the player.
+- Sharing access is scoped per routine: collaborators you invite can run and edit, while uninvited teammates can’t see the flow.
+
+## 🤖 Automation & AI
+
+- Routines automate sequencing, but there are no background jobs or AI assistants tied to them yet—the player reflects only the steps you configure.
+
+## 🏆 Timeline & Points
+
+- Completing a routine doesn’t award standalone points; habit steps feed the habit leaderboard, while item steps stay internal to the routine.
+- Resetting or pausing a routine instance leaves underlying habit logs untouched, so timeline and leaderboard totals remain consistent.
+
+## 🔗 Integrations & Dependencies
+
+- Habit steps update the associated habit logs immediately, influencing Habit widgets, scores, and planner blocks.
+- Dropping routines into Planner creates linked events that maintain duration parity and provide a quick jump back into the player.
+- Shared routines respect the same infrastructure as Habit lists and planner invites, so keep those integrations healthy for smooth collaboration.
+
+## 😌 Pausing Routines
 
 - Heading out on vacation or shelving a flow for a season? Mark the routine as **Paused** from the edit dialog. Paused routines disappear from the widget and player until you unpause them, but every habit/item remains intact for later runs.
-

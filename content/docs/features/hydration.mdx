@@ -1,0 +1,61 @@
+---
+title: "💧 Hydration"
+description: Log, track, and share hydration progress the way you actually drink
+---
+
+## 🚪 Access & Activation
+
+- Turn on Hydration from `Settings → Features → Hydration`, then optionally pin it to the sidebar/mobile toolbar or enable **Show a home widget** for dashboard access.
+- Refresh once after toggling if the navigation doesn’t update immediately—the setting persists per user.
+
+## 🧭 Core Workflow
+
+- Add entries from the hydration page, the home widget, or Alfred. Alfred surfaces your saved templates so you can log a bottle without leaving the keyboard.
+- Each entry stores the amount, beverage type, optional note, and whether it should count toward today's goal.
+- Coffee and tea automatically contribute 90% of their volume toward the goal. The form flags this the first time you pick those types so you understand the adjustment.
+- Use the multi-select header to bulk delete or edit when you're catching up on a day's worth of logs.
+
+## 🛠️ In-Feature Settings
+
+- Build templates with a name, amount, type, and whether they count toward the goal. They live in the sidebar next to your daily stats.
+- Selecting a template opens the logging modal prefilled with those values and the right unit, with the timestamp snapped to the day you're viewing.
+- Manage hydration goals from the settings popover. Add as many goal entries as you like; the start date defines when a new target takes over, so older goals remain attached to their original periods. When no custom goal exists, Benji defaults to 2000 ml.
+- Switch between milliliters and ounces at the top of the page. Benji converts everything under the hood, so historic totals and goals remain accurate.
+- Date filters respect your current timezone, and you can group the log list by beverage type or by day from the toolbar for quick audits.
+
+## 🤖 Automation & AI
+
+- Hydration doesn’t use background jobs or AI helpers yet—everything stays intentionally manual so each entry reflects what you actually drank.
+
+## 🔐 Global Settings & Privacy
+
+- Goal completions can auto-post to the timeline, and the audience is controlled by `Settings → Privacy → Hydration` (default `Private`).
+- Feature toggles, widget visibility, and template/goal management all live inside `Settings → Features → Hydration`.
+
+## 📊 Widgets & Dashboards
+
+- **Home dashboard**: Go to `Settings → Features → Hydration` and enable **Show a home widget** to pin the hydration ring to your dashboard.
+- **Summary page**: Use the `Show hydration` toggle in the summary sidebar to display the hydration ring beside your other metrics.
+- **My Day**: The hydration widget in My Day mirrors your goal progress and updates automatically whenever you log a drink.
+
+## ⚡ Alfred & Quick Actions
+
+- Alfred mirrors every saved template: summon Alfred, start typing the template name, and hit return to log it instantly.
+- Keyboard shortcuts keep catch-up logging fast—bulk select entries with the list header, then delete or edit without re-opening each log.
+
+## 🏆 Timeline & Points
+
+- Once your weighted intake meets the active goal, Benji creates a single "completed hydration goal" post per day, inheriting the Hydration privacy setting.
+- Every hydration log contributes 2 points to the leaderboard (`Hydration log` in the point system); deleting the entry removes the points and any matching post.
+
+## 🔗 Integrations & Dependencies
+
+- Progress surfaces across Benji: the hydration page, My Day widget, Summary page ring, and calendar overview all pull from the same goals and logs.
+- Unit conversions and timezone-aware filters ensure planner stats, exports, and timeline posts reflect your current locale without manual edits.
+- Templates and quick actions share storage with Alfred and widgets, so keep those services healthy when troubleshooting missing entries.
+
+## 💡 Tips & Edge Cases
+
+- Use the `Counts toward goal` toggle when you're logging something that shouldn't hit the daily total—perfect for celebratory drinks or supplements.
+- Pair templates with Alfred if you rely on repetitive drinks (e.g., "Morning coffee 250 ml") and want to log them without touching the mouse.
+- To pin the hydration widget to your home dashboard, open `Settings → Features → Hydration` and enable **Show a home widget**.

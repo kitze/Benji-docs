@@ -1,15 +1,15 @@
 ---
-title: Activities
+title: "🎯 Activities"
 description: Track recurring activities, log rich context, and review everything by recency
 ---
 
-## Access & Activation
+## 🚪 Access & Activation
 
 - Before updating this page, keep running a deep source review in `~/webdev/benji` so every behaviour we document is verified against the live code.
 - Enable Activities from `Settings → Features → Activities`, then use the same modal to turn the feature on and choose whether it shows up in the sidebar, mobile toolbar, or as a home widget.
 - After toggling, refresh once so the navigation picks up the new flag; the Spotlight index also needs the feature enabled before it lists Activities results.
 
-## Core Workflow
+## 🧭 Core Workflow
 
 - Open `Activities` from the sidebar, mobile toolbar, or Spotlight. Desktop shows a search bar plus a `Personal / Work / Both` segmented control; mobile mirrors this inside the sticky header.
 - Click **New Activity** (desktop button) or the `＋` icon (mobile header) to create one. Cards in the grid are grouped by how recently they were logged—Today, Yesterday, last 7 days, 30 days, and so on down to **Haven’t Done**.
@@ -17,49 +17,49 @@ description: Track recurring activities, log rich context, and review everything
 - Use **Log Today**, **Log Yesterday**, or **Log Activity** from the card menu or details modal to capture runs without leaving the page; the full form opens when you need to add notes, contacts, or locations.
 - The standalone activity page (`/my/activities/[id]`) loads the same Activity Log list, so you can keep a tab open for frequent logging.
 
-## Settings Inside the Feature
+## 🛠️ In-Feature Settings
 
 - Activity creation collects a name (required), emoji (optional), type (`Personal` by default), interval in days (numeric, optional), and a **Pin this activity in the home screen widget** toggle (off by default).
 - Editing an activity is inline via the entity menu; deleting one first clears every Activity Log that references it, so treat removal as destructive history cleanup.
 - Activity Logs accept multiple activities, contacts, and locations per entry alongside date, optional duration (recorded in hours/minutes/seconds), and a free-form note. When opened from a card, the activity picker is prefilled.
 - Logs always sort newest-first, and the quick actions populate `start` with either the current time (Log Activity) or the start of the day (Log Today/Yesterday) so streaks stay accurate.
 
-## Global Settings & Privacy
+## 🔐 Global Settings & Privacy
 
 - `Settings → Features → Activities` is the single gate—there’s no separate toggle under `Settings → Privacy`, and activities stay off the public timeline unless you export data elsewhere.
 - From that modal you can also toggle **Show in sidebar**, **Show in mobile toolbar**, and **Show a home widget**; those preferences persist until you uncheck them.
 - There are no plan tiers mentioned in code, and the default state is disabled until each user opts in.
 
-## Widgets & Dashboards
+## 📊 Widgets & Dashboards
 
 - The **Activities** home widget lists every pinned activity, anything logged today, and anything whose day interval is due (last log is at least the interval old). Each row links directly to the activity page.
 - Add the widget either by enabling **Show a home widget** in the feature modal or by opening My Day’s **Edit dashboard** mode and picking **Activities** from the Tracking group.
 - Preview mode seeds the widget with sample data, but once live it displays actual logs in your own timezone.
 
-## Alfred & Quick Actions
+## ⚡ Alfred & Quick Actions
 
 - Spotlight gains **Create a new activity**, **Log an activity**, and search results for individual activities as soon as the feature flag is on.
 - The Activities header’s `＋` button and each card’s ••• menu both open the CRUD modal, so you can create or edit without leaving the grid.
 - Quick menu items fire directly: **Log Today** and **Log Yesterday** create entries immediately with a toast confirmation, while **Log Activity** opens the full Activity Log form.
 
-## Automation & AI
+## 🤖 Automation & AI
 
 - There are no background jobs or AI helpers tied to Activities yet; logging is entirely manual and nothing in `app/features/ai/**` touches Activity models.
 
-## Timeline, Points & Privacy
+## 🏆 Timeline & Points
 
 - Activity Logs never auto-post to the timeline, and there’s no privacy slider for them. Everything stays private unless you manually share it elsewhere.
 - Each Activity Log contributes `+1` to the leaderboard point system (`PointSystemId.ACTIVITY_LOGS`), so frequent logging still feeds the gamified totals even without timeline posts.
 - Removing a log (or deleting the parent activity) immediately drops that point from future leaderboard recomputations.
 
-## Integrations & Dependencies
+## 🔗 Integrations & Dependencies
 
 - Activity Logs can reference Contacts and Locations; those picks drive the avatar stack and location line in each log card, and the Contacts detail page exposes an **Activities** tab powered by the same list component.
 - Pinned activities surface in the My Day widget regardless of interval, and the interval itself only triggers once the user’s local date minus the last log meets or exceeds the stored number.
 - The type field uses the shared `TaskType` enum (Personal/Work) so filters stay consistent with Todos and Habits.
 - Spotlight, navigation favorites, and widget visibility all depend on the feature flag responses returned by `trpc.featureFlags.getCurrent`, so keep that service healthy when debugging visibility issues.
 
-## Tips & Edge Cases
+## 💡 Tips & Edge Cases
 
 - Use the **Pin** toggle for evergreen activities you want in the widget every day; rely on the **Interval in days** when you only want to see something after, say, three days of inactivity.
 - Leave the interval blank if you don’t want scheduling—the resolver ignores non-numeric values, so entering text won’t be saved.
