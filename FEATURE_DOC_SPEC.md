@@ -32,23 +32,23 @@ Use this spec every time we add or update a feature page. It exists to prevent s
   - Note default values and how changes affect historic data or downstream widgets.
 
 4. **Global Settings & Privacy**
-   - Summarize related global settings:
+   - Summarize related global settings _only when they matter_:
      - Feature enablement toggles or mini widgets.
      - Privacy sliders or sharing options with their defaults.
      - Keyboard shortcuts or user-level switches tied to the feature.
+   - Skip the section entirely if there’s nothing meaningful to note—don’t add filler about “no extra settings.”
 
 5. **Widgets & Dashboards**
-   - List every widget the feature exposes (home dashboard, summary ring, sidebar mini widget, etc.).
-   - Explain what each widget displays, how it updates (live vs. manual), and any configuration limits.
-   - Document exactly how to add or remove each widget (settings path, toggle label, permissions).
+   - Include only when the feature exposes actual widgets or dashboard tiles.
+   - For each widget, describe what it shows, how it updates (live vs. manual), configuration limits, and the exact steps to add/remove it.
 
 6. **Alfred & Quick Actions**
    - Document Alfred commands: how to launch them, what they prefill, and which templates appear. Mention when keyboard shortcuts are optional alternatives rather than requirements.
    - Mention other quick launchers (menu bar, Raycast, mobile widgets) if supported.
 
 7. **Automation & AI** (include when relevant)
-   - Describe any background jobs, AI helpers, or automations and how users trigger or monitor them.
-   - Note refresh steps, required integrations (e.g., OpenAI key), and how results surface in the UI.
+   - Include this section only when the feature actually runs background jobs, AI assistants, or automations.
+   - When applicable, explain how users trigger or monitor them, mention refresh steps, required integrations (e.g., OpenAI key), and where results surface in the UI.
 
 8. **Timeline, Points & Privacy**
    - Specify what goes to the timeline, when it triggers (goal completion, manual share), and the exact point value it awards.
@@ -79,3 +79,4 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Kept language user-facing—no database tables, internal class names, or engineering jargon.
 - [ ] Grouped related information (lists & sharing, AI, templates, goals, customization, etc.) so each topic appears in one clear section.
 - [ ] Clarified when keyboard shortcuts are optional versus the only way to act.
+- [ ] Omitted empty sections—if a topic genuinely has nothing to say, don’t include a placeholder.

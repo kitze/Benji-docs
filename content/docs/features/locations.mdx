@@ -1,0 +1,60 @@
+---
+title: "📍 Locations"
+description: Keep a searchable list of places you care about and log visits without leaving your flow
+---
+
+## ✨ What It Does
+
+Locations is a memory book for the spots that matter—favorite cafés, client offices, gyms. It shows when you were last there, lets you tag who’s connected to the place, and gives you a fast way to record the next visit so nothing slips through the cracks.
+
+## 🚪 Access & Activation
+
+- Enable Locations from `Settings → Features → Locations`. Turn it on to surface the page in the sidebar or mobile toolbar.
+- Refresh once after toggling if the navigation doesn’t update; each user controls their own visibility.
+
+## 🧭 Core Workflow
+
+- Open the Locations page to see every place grouped by how recently you were there (Today, Yesterday, last 7 days, and so on down to Never Visited).
+- Use the search bar (desktop) or the sticky header (mobile) to filter by name when the list gets long.
+- Click **New Location** (desktop) or the floating `＋` button (mobile) to add a place. Give it a name, emoji, optional address and note, and you’re set.
+- Select any card to open a details modal with the last visit timestamp and quick edit options.
+- Log a visit right from the card menu: **Log Today**, **Log Yesterday**, or **Log Visit** (which opens the Activity Log form if you need notes or to attach multiple locations at once).
+
+## 🛠️ In-Feature Settings
+
+- The creation form supports:
+  - Emoji + name (required) so cards are easy to scan.
+  - Contact links—attach one or more contacts to note who you usually meet there.
+  - Address and free-form notes for context like door codes.
+  - `Parent location` when you want a hierarchy (e.g., “HQ → Board Room”).
+- Edit or delete a place from the entity menu on the card or in the details modal.
+
+## 🔐 Global Settings & Privacy
+
+- Visit logging runs through Activity Logs, so sharing and privacy follow the same rules: nothing posts automatically, and you decide when to share a log.
+
+## 📊 Widgets & Dashboards
+
+- Visits surface in Activity widgets because they’re logged through Activity Logs; there isn’t a dedicated Locations widget yet.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight lists existing locations (enable the feature first), making it easy to jump into a card from the command palette.
+- There isn’t a dedicated “create location” command; rely on the page button or the entity menu to add new places.
+- Use the card menu’s quick actions when you need to log today or yesterday without opening a form.
+
+## 🏆 Timeline & Points
+
+- Visits are stored as Activity Logs, which award +1 leaderboard point (`Activity log` in the point system). Nothing posts automatically; the log simply updates your recency view and points.
+
+## 🔗 Integrations & Dependencies
+
+- Activity Logs can reference multiple locations in one entry, so a single visit can update several cards at once.
+- Trips can link to locations (the Prisma model associates them), making it easier to reuse destinations when planning travel.
+- Linked contacts gain extra context—when you view a contact, the Activity Log list can show joint visits because both the location and the contact are attached to the same log.
+
+## 💡 Tips & Edge Cases
+
+- Use parent locations to group rooms or buildings; the form prevents loops, so you can safely build multi-level hierarchies.
+- When you’re logging a visit manually, include notes in the Activity Log so the Location details modal shows richer history.
+- If you manage a recurring route, log the visit from the card menu on mobile—the Log Today/Yesterday shortcuts run instantly and keep your recency groups accurate.

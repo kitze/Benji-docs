@@ -1,0 +1,66 @@
+---
+title: "📓 Journal"
+description: Capture daily reflections, protect them with optional encryption, and pull insights from monthly stats
+---
+
+## ✨ What It Does
+
+Journal gives you a quiet space to write—whether you’re logging a quick gratitude list or a full retrospective. Entries stay organized by month, templates keep prompts handy, and optional encryption makes sure private thoughts stay private.
+
+## 🚪 Access & Activation
+
+- Toggle Journal on from `Settings → Features → Journal` to add it to your sidebar or mobile toolbar.
+- Encryption is opt-in. Open the lock icon in the desktop header (or the same section in Settings) to turn it on, set a reminder, and store the key on your device.
+
+## 🧭 Core Workflow
+
+- Browse months with the header navigator or the calendar in the sidebar; entries are grouped by day with an at-a-glance word count.
+- Click **Write** (desktop) or the floating pencil (mobile) to start an entry. The editor autosaves to local storage, tracks word goals, and lets you adjust the date if you’re backfilling.
+- Open any card to edit in-place. Hold `Cmd/Ctrl` while clicking to multi-select when you’re planning bulk actions.
+- Use the template shelf to drop in a favorite prompt or a platform starter entry—it opens the create modal prefilled with that content.
+
+## 🛠️ In-Feature Settings
+
+- Entry form controls:
+  - Date picker with big calendar tile for quick backdating.
+  - Title field (fancy font) and rich text body with toolbar shortcuts.
+  - Optional word goal badge you can toggle or tweak per device.
+- Entry menus support rename, delete, and encryption toggles (`Mark as Encrypted/Unencrypted`, Encrypt Content, Decrypt).
+- The floating bulk toolbar appears when you select multiple entries—use it to mark as encrypted, decrypt, or delete in batches.
+
+## 🔐 Global Settings & Privacy
+
+- The encryption widget in the desktop header manages the master switch. When encryption is on, you **must** store the key locally; we never keep it on the server.
+- Lose the key and encrypted entries stay unreadable—use the password reminder field to set a hint you’ll remember.
+- Some features (Journal and Affirmations) share the same encryption setting, so flipping it affects both.
+- Journal entries never auto-post to the public timeline.
+
+## 📊 Widgets & Dashboards
+
+- Add the **Journal Stats** widget from the My Day editor to surface total entries, month counts, word totals, and your active streak. Each stat can be toggled on/off in widget settings.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight offers **Create a new journal entry** (opens the full page) and **Create a quick journal entry** (opens the modal so you can jot something without leaving your view).
+- The Journal page itself exposes **Write** buttons on desktop and mobile, plus templates in the sidebar for one-click reuse.
+
+## 🤖 Automation & AI
+
+- There’s no AI assistant for Journal yet. Templates are the fastest way to reuse prompts without relying on automation.
+
+## 🏆 Timeline & Points
+
+- Every entry contributes +2 points to the leaderboard (`Journal entry` in the point system).
+- Entries stay private by default; share links manually if you want peers to read them.
+
+## 🔗 Integrations & Dependencies
+
+- Encryption settings apply globally, so once you flip the switch, other encrypted features (like Affirmations) expect the same key.
+- Journal Stats widget pulls from the TRPC stats endpoint—the same data powers the sidebar stats in the Journal page.
+- The month navigator and calendar share the selected date; changing one updates the other and all queries.
+
+## 💡 Tips & Edge Cases
+
+- Multi-select is desktop-first: hold `Cmd/Ctrl` when clicking cards to bulk encrypt or delete. On touch devices, use the long-press selection affordance.
+- Use the Decrypt modal when someone shared the key with you—you can preview decrypted content before committing to save it unencrypted.
+- If you write daily, set a word goal so the progress bar nudges you toward the streak target. Goals are stored per device, so adjust them separately on mobile if needed.
