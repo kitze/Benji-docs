@@ -1,0 +1,62 @@
+---
+title: "💰 Finances"
+description: Keep subscriptions and payment cards organized so recurring costs never sneak up on you
+---
+
+## ✨ What It Does
+
+Finances gives you two simple ledgers—one for subscriptions, one for payment cards. Each time you sign up for a tool or add a new card, log it here so you can see what you’re paying, when renewals hit, and which card is tied to which service.
+
+## 🚪 Access & Activation
+
+- Enable Finances from `Settings → Features → Finances`. The feature surfaces two pages in your sidebar/mobile toolbar: **Subscriptions** and **Cards**.
+- Refresh once after toggling if the navigation doesn’t update; visibility is per-user.
+
+## 🧭 Core Workflow
+
+- **Subscriptions page**: lists every recurring cost with amount, currency, and color-coded tiles. Use the search bar at the top to filter by name, and click **Add subscription** to log a new one.
+- Subscription form fields include name, amount, color, currency, payment cadence (monthly/annual/custom), start date, status (active/paused/cancelled), and type (personal/work).
+- **Cards page**: keeps track of your payment methods. Add a card with an emoji/color, last four digits, currency code, finance card type (credit/debit), and network (Visa, Mastercard, etc.).
+- Each card and subscription opens in a CRUD modal for quick edits or deletion. Multi-select headers let you bulk-delete if you’re doing cleanup.
+
+## 🛠️ In-Feature Settings
+
+- Both lists use the Trpc CRUD modals:
+  - Subscriptions support color picking so you can visually group services in the list.
+  - Cards allow setting the network/type combo and storing an optional color so linked subscriptions share the same hue.
+- When you edit an entry, values prefill exactly as saved, making it easy to adjust the amount or update the status after cancelling something.
+
+## 🔐 Global Settings & Privacy
+
+- Everything stays private to your workspace—no timeline posts, no automated sharing.
+- There are currently no encryption settings for Finances, so treat it as a convenience ledger rather than a vault for sensitive details (only the last four digits are stored).
+
+## 📊 Widgets & Dashboards
+
+- Finances doesn’t have dedicated widgets yet. Today the subscriptions/cards lists are the primary monitoring surface.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight (Cmd/Ctrl + K) includes:
+  - **Create a new subscription** → opens the subscription form.
+  - **Create a new credit card** → opens the card form.
+  - **Credit cards** / **Subscriptions** quick navigation links.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Spotlight to jump to Finances or add a subscription/card without touching the mouse.
+
+## 🏆 Timeline & Points
+
+- Finances doesn’t hook into the timeline or leaderboard. Entries are purely for tracking.
+
+## 🔗 Integrations & Dependencies
+
+- Subscription records can reference a card (`cardId`), letting you match recurring charges to the payment method you’re using.
+- Currency formatting uses the stored currency code, so make sure to set it correctly when you create a subscription.
+
+## 💡 Tips & Edge Cases
+
+- Use colors to mirror card + subscription relationships (e.g., all subscriptions billed to one card share the same color).
+- Update the status to **Paused** or **Cancelled** when you negotiate a hold—keeping old entries around helps you remember what you already tried.
+- Multi-select (via the checkboxes that appear after you select one tile) is handy when you need to delete several outdated cards or subscriptions at once.
