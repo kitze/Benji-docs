@@ -5,27 +5,31 @@ import { lucideIconsPlugin } from 'fumadocs-core/source/lucide-icons';
 const flattenFeaturesFolder: LoaderPlugin = {
   name: 'flatten-features-folder',
   enforce: 'post',
-  transformPageTree(root) {
-    if (!root.children) return root;
+  transformPageTree: {
+    root(root) {
+      if (!root.children) return root;
 
-    const nextChildren = [];
+      const nextChildren: typeof root.children = [];
 
-    for (const child of root.children) {
-      if (child.type === 'folder' && child.$id === 'features') {
-        nextChildren.push({
-          type: 'separator',
-          name: child.name ?? 'Features',
-          icon: child.icon,
-        });
-        nextChildren.push(...child.children);
-        continue;
+      for (const child of root.children) {
+        if (child.type === 'folder' && child.$id === 'features') {
+          nextChildren.push({
+            type: 'separator',
+            name: child.name ?? 'Features',
+            icon: child.icon,
+          });
+          if (child.children) {
+            nextChildren.push(...child.children);
+          }
+          continue;
+        }
+
+        nextChildren.push(child);
       }
 
-      nextChildren.push(child);
-    }
-
-    root.children = nextChildren;
-    return root;
+      root.children = nextChildren;
+      return root;
+    },
   },
 };
 

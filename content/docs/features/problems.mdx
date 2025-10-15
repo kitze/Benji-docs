@@ -1,0 +1,61 @@
+---
+title: "🛠️ Problems"
+description: Track recurring issues, log each flare-up, and spot which annoyances deserve attention first
+---
+
+## ✨ What It Does
+
+Problems gives you a running list of the things that keep breaking, nagging, or slowing you down—anything from a flaky API endpoint to a fridge that leaks every other week. Each time the issue crops up, log it with one click so you can see the true frequency and decide what to tackle next.
+
+## 🚪 Access & Activation
+
+- Enable Problems in `Settings → Features → Problems` to add it to the sidebar and mobile toolbar.
+- Refresh once if the navigation doesn’t update immediately; visibility is per-user.
+
+## 🧭 Core Workflow
+
+- Open the Problems page to see every issue sorted by how often it’s been logged. Each card shows the total count, emoji (optional), and annoying level badge if you set one.
+- Click **Add problem** to create a new entry. Give it a name, optional emoji, and choose how annoying it feels; the form is intentionally lightweight so you can capture ideas fast.
+- When the problem resurfaces, hit **I had this now** on the card (or press `L` while hovering on desktop) to record another occurrence. The log count and ordering update instantly so hotspots bubble to the top.
+- Use the card’s **Edit** button to adjust the name/emoji/annoying level, or **Delete** to remove the record entirely (logs go with it).
+
+## 🛠️ In-Feature Settings
+
+- Problem form fields:
+  - `Emoji` (optional) for quick visual ID.
+  - `Name` (required) to describe the issue.
+  - `Annoying level` segmented control (`few times a day`, `annoying daily`, `weekly`, etc.) so you can signal urgency.
+- Logging is one tap: the **I had this now** button (or `L` shortcut) creates a log entry with a timestamp. Notes aren’t captured yet, keeping the flow frictionless.
+
+## 🔐 Global Settings & Privacy
+
+- Problems are private by default; there’s no timeline sharing or public feed. Everything lives in your workspace.
+
+## 📊 Widgets & Dashboards
+
+- No dedicated Problems widget today. The page itself is the primary view—use the log counts to gauge priority.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight (Cmd/Ctrl + K) offers **Add problem** so you can capture a new issue without opening the page first.
+- The card-level log shortcut (`L`) acts as a mini quick action when you have the page open.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Spotlight and run **Add problem** from anywhere.
+- `L`: when hovering a problem card on desktop, log a fresh occurrence instantly.
+
+## 🏆 Timeline & Points
+
+- Problems don’t post to the timeline or award leaderboard points—this is purely an internal tracker.
+
+## 🔗 Integrations & Dependencies
+
+- Problem logs are stored separately (see `ProblemLog` records in the database). Deleting a problem removes its logs.
+- There are no downstream integrations yet; analytics rely on the per-problem log count surfaced on each card.
+
+## 💡 Tips & Edge Cases
+
+- Use emojis to group similar frustrations (🛜 for network, 🧊 for cooling issues) so the list stays scannable.
+- Update the annoying level when reality changes—seeing a “Weekly” problem drop to “Monthly” is a nice morale boost.
+- If you rely on the `L` shortcut, keep the cursor over the card you’re logging so the handler fires immediately.
