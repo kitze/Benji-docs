@@ -1,0 +1,81 @@
+---
+title: "📝 Lists"
+description: Build reusable checklists, nest shared contexts, and hand teammates the tasks that matter to them
+---
+
+## ✨ What It Does
+
+Lists organise todos into lightweight collections that are easier to reuse than full projects. They support nesting, default assignees, tags, and permissions, making them ideal for shared areas such as team queues, routines, or collaborative checklists. Lists feed the core Todos experience—tasks inherit list-level weighting and sharing—and you can promote a list to a project (or demote a project to a list) whenever you need stage-based structure.
+
+## 🚪 Access & Activation
+
+- Lists ride on the Todos feature, so first enable `Settings → Features → Todos` and keep the Todos sidebar visible on desktop or mobile.
+- Open the **Lists** section in the sidebar to browse personal and shared lists, accept invitations, or create a new list. The sidebar honours nesting, so child lists appear indented under their parent.
+- Lists can be created from Alfred (`Cmd/Ctrl + K` → “Create a new todo list”), the sidebar “+” button, or the list context menu (use **Create child list** to nest).
+
+## 🧭 Core Workflow
+
+- **Create & configure**  
+  Give the list a name, emoji, type (`Personal` or `Work`), optional description, parent list, priority, tags, default assignee, and whether it should appear in the sidebar/Overview. Pausing a list hides it from active buckets while retaining data. When you attach a list to a parent, Benji inherits the parent’s collaborators so access stays consistent.
+
+- **Sections & sequential flow**  
+  Lists start with a default section. Add additional sections, reorder them, and toggle sequential/parallel behaviour per section—sequential sections only expose the first incomplete todo in Overview. Each section offers quick add, inline renaming, sequential toggles, and drop zones for drag-and-drop.
+
+- **Working inside the list page**  
+  The list detail page shows the emoji name, description, collaborators, invites, and default assignees. Choose between sectioned and flat layouts using the filter settings (see below). Flat mode lets you hide specific tags or group tasks by a tag group when you need to audit tagging or workload distribution.
+
+- **Nested structures**  
+  Use the context menu’s **Create child list** to spawn sublists. Child lists inherit share rules from their parent, making it easy to give teams or clients scoped access without rebuilding permissions.
+
+- **Default assignee logic**  
+  If you set a default assignee, every new todo created inside the list (or any of its sections) auto-assigns that person—perfect for teams with clear ownership boundaries.
+
+## ⚙️ Settings Inside the Feature
+
+- **Filter panel**  
+  The filter popover on the list page lets you switch between grouping by section versus a single flattened list, hide/show individual tags, group the flattened view by any tag group, and (when the global “Show created by” filter is active) toggle creator names on each task row.
+
+- **Context menus**  
+  Right-click or tap ••• to edit, pause/resume, show/hide in sidebar, reset every contained todo to “not completed”, convert to project, create child lists, or delete. Reset is ideal when you recycle a checklist each week.
+
+- **Invites & sharing**  
+  The list header surfaces pending invites and current collaborators. Invitees receive permission toggles (`Can create`, `Can edit`, `Can delete`, `Can view details`) so you can grant exactly the level of access you want. Invites auto-accept when an auto-share relationship exists between you and the recipient.
+
+## 🔐 Global Settings & Privacy
+
+- Lists respect the global Todo settings (badge counts, subtask behaviour, points display).
+- List membership controls visibility. Everyone invited to the list—and, by inheritance, to any child lists—can see and edit its todos according to the permissions you grant. Tasks marked **Private** still hide their titles unless collaborators enable the “Show private todos” filter.
+
+## 📊 Widgets & Dashboards
+
+- List todos appear throughout Todos (Overview groups, Today widget, Summary stats, leaderboard) as long as `Show in Overview` stays enabled. Paused lists still appear in the sidebar (greyed out) and receive quick actions in the context menu.
+
+## ⚡ Alfred & Quick Actions
+
+- Alfred (`Cmd/Ctrl + K`) exposes “Create a new todo list”, “Create multiple new todos”, “Convert todo list to project”, and quick navigation to specific lists. Spotlight search surfaces list names so you can jump directly into a list or its sharing manager without hunting through the sidebar.
+- The multi-select toolbar inside Todos includes a **Move to list** popover—select a batch of tasks, click the list icon, search for the target list, and they’ll adopt the new context (and its default assignee) instantly.
+
+## ⌨️ Keyboard Shortcuts
+
+- Lists inherit the global todo shortcuts: `q` for quick add, `Cmd/Ctrl + K` for Alfred, and quick menu hotkeys (`D`, `P`, `T`, `J`, `L`, `A`).
+
+## 🏆 Timeline & Points
+
+- Tasks inside a list still award the standard 5 base points upon completion, plus any weighting from their own priority, due dates, annoying level, or mandatory flag. Lists can contribute additional weighting via priority and tag defaults, so using separate lists for “high leverage” work makes leaderboard results more representative.
+- Activity stays scoped to the list membership and each task’s privacy flag, keeping the public timeline quiet unless you share it.
+
+## 🔗 Integrations & Dependencies
+
+- **Todos & Planner**: Lists are another layer on top of Todos. Moving a task into a list updates its list badge, default assignee, and points instantly while keeping planner dates and history untouched.
+- **Projects**: Convert lists into projects when you need stage-by-stage control, or move a project back to a list when the work becomes a simple checklist. Conversion retains todos, sections, tags, and collaborators.
+- **Nested sharing**: Child lists inherit the parent’s shared-with roster. Adjust the parent to adjust every branch, or fine-tune permissions per child using the share modal.
+- **Weekly planning & widgets**: Planned dates on list tasks populate the Weekly planner, Today widget, and Summary stats, so the rest of the system responds just like it does for any other todo.
+
+## 💡 Tips & Edge Cases
+
+- Use child lists to segment work by team or client; collaborate at the parent level and drill into child lists for dedicated contexts.
+- Set a default assignee on lists that represent someone’s queue so all quick-added tasks land on the right person without manual edits.
+- Pause lists you only revisit occasionally—paused lists disappear from Overview but stay a click away in the sidebar.
+- Convert a list to a project whenever you need sequential sections, SIP weighting, or richer roadmap tooling; you can revert later without losing history.
+- In flat list mode, group by a tag group to audit workload (e.g. by initiative, location, or priority) and hide tags that aren’t relevant to a review session.
+- Sharing permissions are granular: strip “Can delete” for clients, leave “Can create” for teammates, and use reset after each recurring cycle instead of duplicating the list.

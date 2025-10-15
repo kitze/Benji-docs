@@ -1,0 +1,86 @@
+---
+title: "🗂️ Projects"
+description: Organise related todos into structured roadmaps, share progress, and keep teams marching in lockstep
+---
+
+## ✨ What It Does
+
+Projects turn scattered todos into cohesive roadmaps. Each project bundles sections, progress tracking, and permissions so you can stage work, visualise completion, and loop collaborators in without mailing spreadsheets around. Tasks keep all the power of the core Todos feature while inheriting project-level status, tags, and sharing rules. When you need a simpler checklist or a reusable template, projects convert to lists (and back) in a couple of clicks.
+
+## 🚪 Access & Activation
+
+- Projects live inside the Todos feature. Enable `Settings → Features → Todos` and pin Todos to the sidebar or mobile toolbar so the Projects panel stays one tap away.
+- Open the **Projects** tray in the todo sidebar to browse active projects, accept invites, or create a new one. Use the **Projects** view from the sidebar or Alfred (`Cmd/Ctrl + K`) to launch the Kanban-style management board.
+- Creating a project inside a shared list automatically copies the parent’s collaborators so the same people stay in sync.
+
+## 🧭 Core Workflow
+
+- **Create & configure**  
+  Give the project a name, emoji, status (`To do`, `In progress`, `Done`), type (`Personal` or `Work`), optional description, due and start dates, priority, tags, and whether it should appear in Overview/sidebar. Ticking **Super Important Project (SIP)** awards +50 extra points to every contained task, and marking **Is a template** makes the project available in the “Create from template” popover.
+
+- **Section-driven execution**  
+  Each project starts with a default section you can rename. Add more sections (desktop button or mobile menu), reorder them, and choose sequential versus parallel flow per section. Sequential projects dim later sections and only surface todos from the earliest incomplete section in Overview, encouraging stage-based execution.
+
+- **Plan & review inside the project page**  
+  The project detail view shows the emoji title, description, collaborator list, and a progress ring (completed vs total todos). Each section offers quick add, inline editing, sequential toggles, and a drop zone so you can drag todos in from other contexts. Subtasks respect the project’s sequential rules, and shared projects automatically show avatars next to each todo.
+
+- **Manage portfolios from the Kanban board**  
+  The **Projects** page exposes a Kanban board with three axes: Status, Priority, and Type. Drag cards between columns to update the chosen property, or switch the property selector to slice the board by a different dimension mid-session.
+
+- **Collaborate & share**  
+  Use the project menu or sharing manager to invite teammates with granular permissions (create, edit, delete, view details). Pending invites sit at the top of the sidebar and the Project view until they’re accepted or revoked.
+
+## ⚙️ Settings Inside the Feature
+
+- **Context menus**  
+  Right-click (or tap ••• on mobile) to edit, duplicate, convert to list, hide from sidebar, mark as done/in progress/to do, reset all completions, or delete. “Convert to todo-list” moves every section and task into a new list while cleaning up the original project.
+
+- **Templates & duplication**  
+  Mark any project as a template, then use the sidebar’s template icon to spawn fresh copies. Duplicate maintains sections, todos, tags, and SIP settings, so you can reuse successful structures without hand-copying tasks.
+
+- **Sequential controls**  
+  Toggle sequential/parallel behaviour both at the project level (sections must complete in order) and per section (todos within the section must complete in order). Sequential mode hides downstream work from Overview until prerequisites clear.
+
+- **Visibility toggles**  
+  `Show in Overview` determines whether project tasks appear in Overview groups once they’re actionable. `Show in sidebar` removes the shortcut without archiving the project so you can declutter long-lived work.
+
+## 🔐 Global Settings & Privacy
+
+- Projects inherit all global Todo settings (badge counts, subtask behaviour, points display), keeping configuration consistent with the rest of Todos. Privacy flows through the project’s membership: only the owner and invited collaborators can open the project page or see its tasks unless a todo also belongs to a shared list.
+- Completed project tasks still respect individual task privacy; mark sensitive items as **Private** if you need to hide titles from onlookers without revoking access to the project itself.
+
+## 📊 Widgets & Dashboards
+
+- Project cards include a radial progress indicator and completed/total counters. Add the Projects panel to the sidebar—or pin specific projects to the top—to keep an eye on momentum.
+- Projects feed the main leaderboard via their todos; SIP projects dramatically increase point values, making them stand out in the rankings.
+
+## ⚡ Alfred & Quick Actions
+
+- `Cmd/Ctrl + K` exposes shortcuts to create a project, create from template, open the Projects board, or jump directly into a specific project. Spotlight search is aware of project names and sections, so typing a project name offers a quick “Go to Project” action.
+- Context menus inside the sidebar or project cards mirror the same quick actions (duplicate, convert, share) without opening the project page first.
+
+## ⌨️ Keyboard Shortcuts
+
+- Projects honour the global todo shortcuts (`Cmd/Ctrl + K`, `q`, quick menu hotkeys) through their underlying tasks and support standard selection plus drag-and-drop gestures.
+
+## 🏆 Timeline & Points
+
+- Every completed task inside a project awards 5 base points plus its computed weighting (priority, due date proximity, tags, mandatory flag, annoying level). SIP projects tack on an extra +50, so use them intentionally—they can drastically swing the leaderboard.
+- Sequential projects hide later tasks from Overview until earlier sections finish, which prevents premature point farming on future stages.
+- Project work stays scoped to the owner and invited members, keeping the public timeline clear unless you share it deliberately.
+
+## 🔗 Integrations & Dependencies
+
+- **Todos**: Projects are containers on top of the Todos system. Moving a task into or out of a project retains its history, comments, and points. Bulk Move to Project actions from the todo selection toolbar respect section ordering.
+- **Lists**: You can convert a project into a list (and vice versa). Conversion keeps sections, todos, tags, and collaborators intact, letting you downgrade to a lightweight checklist or upgrade to a staged project when requirements change.
+- **Planner & Weekly planning**: Planned dates and time-of-day on project tasks drive their placement in the Weekly planner and calendar. Dragging a task into a project section updates its context immediately.
+- **Collaboration surfaces**: Project invites integrate with auto-share rules, so trusted collaborators you always share with can be auto-accepted. Assigned teammates receive notifications when you ping them from the todo context menu.
+
+## 💡 Tips & Edge Cases
+
+- Mark a project as **Template** before wrapping a successful initiative; future clones keep structure, tags, and SIP settings so you can relaunch in minutes.
+- Use sequential sections when downstream tasks truly depend on upstream work—this keeps Overview focused on the next actionable chunk.
+- **Reset** is perfect for recurring launches: it keeps structure but marks every task unfinished so you can run the playbook again.
+- Hide dormant projects from the sidebar without deleting them—re-enable `Show in sidebar` from the context menu when work resumes.
+- Convert a project to a list when you realise the work is really a shared checklist; you can always convert back after you need stages or SIP weighting.
+- Pin critical projects to the sidebar (or use the template popover) to avoid scrolling through long lists of initiatives.

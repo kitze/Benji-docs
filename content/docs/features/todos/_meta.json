@@ -1,0 +1,10 @@
+{
+  "title": "✅ Todos",
+  "icon": "✅",
+  "defaultOpen": true,
+  "pages": [
+    "index",
+    "projects",
+    "lists"
+  ]
+}

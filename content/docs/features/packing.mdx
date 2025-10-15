@@ -1,0 +1,63 @@
+---
+title: "🎒 Packing"
+description: Build a reusable packing library, flag what needs special attention, and feed trips with the right gear automatically
+---
+
+## ✨ What It Does
+
+Packing keeps every item you might take on a trip—laptop charger, hiking boots, passport—in a single library. Tag items with useful metadata (essentials, charging needs, morning-of reminders) so every trip checklist is accurate with almost no manual work.
+
+## 🚪 Access & Activation
+
+- Enable Packing from `Settings → Features → Packing` to add **Packing items**, **Packing activities**, **Transports**, and related sections to your sidebar/mobile toolbar.
+- Refresh once after toggling to make sure the new pages show up in navigation.
+
+## 🧭 Core Workflow
+
+- Open **Packing items** to see your master list. Use the search bar for quick filtering and **Add item** to capture something new.
+- Each item card shows emoji/name, description, and badges for flags like “Essential,” “Needs charging,” “Expendable,” or “Double check.”
+- Associate items with **Packing activities** (e.g., “Skiing,” “Gym”) so trips that include those activities pull the right gear.
+- Multi-select header tools let you bulk delete or edit when you’re cleaning up the list.
+
+## 🛠️ In-Feature Settings
+
+- The item form includes:
+  - Emoji + name + description.
+  - Activity multi-select (with inline creation) so you can tie the item to specific trip contexts.
+  - Flags:
+    - **Essential** → always included when you generate packing for a trip.
+    - **Expendable** → reminds you it may need re-purchasing each trip.
+    - **Needs charging** → surfaces in the trip charging board until marked Charged.
+    - **Needs to be double checked** → keeps it prominent for day-of review.
+  - `Charging status` (Not charged → Charging → Charged) to track progress even outside the trip board.
+  - `When to pack` (e.g., NightBefore, InTheMorning) so the trip filters can show morning-only items.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight (`Cmd/Ctrl + K`) offers:
+  - **Create a new packing item**.
+  - **Create a new packing activity**.
+  - Navigation shortcuts to the Packing pages.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: jump into Spotlight to add items or activities from anywhere.
+- Within a trip’s packing board, use the action buttons to mark items packed/charging/charged—the board updates instantly.
+
+## 🏆 Timeline & Points
+
+- Packing status changes stay within your trip planning, leaving the timeline and leaderboard untouched.
+
+## 🔗 Integrations & Dependencies
+
+- Trips use packing items in two ways:
+  - All **essential** items get pulled into every trip automatically.
+  - Items tagged with a trip’s selected activities are added when you press **Start packing**.
+- The trip charging board only shows items marked **Needs charging**, using your per-item charging status to track progress.
+- Packing activities serve as reusable templates; you can create them on the fly from the item form or via Spotlight.
+
+## 💡 Tips & Edge Cases
+
+- Give essentials neutral colors/emojis and reserve bold icons for activity-specific items to scan faster.
+- Use the `When to pack` field to keep “morning-only” items out of the main queue until departure day.
+- After a trip, reset charging statuses so future packing runs start fresh—either from the packing board or directly on the item.

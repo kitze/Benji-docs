@@ -4,12 +4,15 @@
   "defaultOpen": true,
   "pages": [
     "activities",
+    "todos",
     "food",
     "habits",
     "hydration",
     "ambient-sounds",
     "finances",
     "locations",
+    "packing",
+    "trips",
     "journal",
     "problems",
     "routines"

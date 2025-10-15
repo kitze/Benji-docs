@@ -1,0 +1,105 @@
+---
+title: "✅ Todos"
+description: Capture tasks, plan your day, and keep teammates aligned with powerful filters and shared contexts
+---
+
+## ✨ What It Does
+
+Todos is Benji’s catch-all system for ad-hoc work, follow-ups, and recurring chores. It combines quick capture, deep task metadata, and multiple planning views so you can shuffle items between inbox, today, tomorrow, or future buckets without retyping anything. Each task carries rich context—owners, lists, projects, tags, points, and automation flags—so overview pages stay signal-rich, the leaderboard stays fair, and collaborators only see what applies to them. Deep dives on task containers live in the dedicated [Projects](./projects) and [Lists](./lists) docs.
+
+## 🚪 Access & Activation
+
+- Enable the feature from `Settings → Features → Todos`, then choose whether to pin the page to the sidebar, mobile toolbar, or surface the optional **Today** home widget.
+- Pick a default landing view in `Settings → Features → Todos → Main todo screen` (Overview, Today, Tomorrow, Inbox, or Upcoming). The navigation sidebar uses this preference whenever you tap **Todos**.
+- The top-left segmented control lets you switch between `Both`, `Personal`, and `Work`; that choice is remembered per device.
+
+## 🧭 Core Workflow
+
+- **Quick capture everywhere**  
+  Use the “Quick add todo…” input (or press `q`) to log an item without leaving the current view. Quick add inherits the active task type, planned date, list section, or project section when you invoke it from a contextual surface (Upcoming buckets, project sections, list sections, or the Today widget). The toolbar’s import button opens **Create multiple todos**—paste one task per line and Benji bulk-creates each entry.
+
+- **Full detail editing when you need it**  
+  Open any task (click or press `Enter`) to set emoji, long-form description, links, location, waiting status plus reason, mandatory flag, privacy toggle, start date, planned date, due date, recurring cadence, time of day, duration estimates, working hours, annoying level, tags, assignees, parent list, parent project, and blocking dependencies. The form also exposes subtasks with sequential/parallel behaviour, comments, and title/description history so you can roll back edits.
+
+- **Logging progress**  
+  Click the checkbox (or tap on mobile) to complete a task. Hover to reveal quick actions for “Plan for today”, “Plan for tomorrow”, “Clear planned date”, start/add to a Pomodoro, or delete. Recurring tasks immediately advance to the next due date and drop any attached planner event or reminders so you only see what’s actionable.
+
+- **Power menu & pinning**  
+  The ••• menu (keyboard hotkeys: `D`, `P`, `T`, `J`, `L`, `A`) lets you set due/planned dates, tags, projects, lists, assignees, priority, time-of-day, duration, annoying level, and toggle “Pin to top” or “Pin to menu bar”. Only one item can be menu-bar pinned at a time; it appears in the desktop menubar for constant visibility. The context menu also offers **Ping assigned person** to nudge collaborators.
+
+- **Selections & bulk actions**  
+  Hold `Cmd`/`Ctrl` while clicking to multi-select. A fixed toolbar appears with bulk actions: mark complete, plan for today/tomorrow/custom date, move planned date ±1 day, clear planned dates, move the batch to a project or list, or delete. Bulk edits clear the selection automatically to prevent accidental replays.
+
+- **Assignments & collaboration**  
+  Click the avatar stack to manage assignees; `Cmd`/`Ctrl`-click instantly adds or removes yourself. Tasks inherit default assignees, priority, and tag weighting from the list or project they live in, so scoring stays consistent. Waiting tasks show a yellow chip (Alt-click to clear), and anything blocked by another todo automatically lands in the “Can’t be started” group until prerequisites clear.
+
+- **Subtasks, comments, and history**  
+  Subtasks are first-class todos with their own points and workflow. Choose sequential mode to expose only the next subtask in Overview or parallel mode to show them all; you can also reset them en masse. Comments, completion history, and the title/description history picker help you audit changes without leaving the page.
+
+## ⚙️ Settings Inside the Feature
+
+- **Task type & ownership controls**  
+  The sidebar segmented control filters by `Both`, `Personal`, or `Work`. Weekly planning adds an ownership filter so you can review items assigned to you versus teammates.
+
+- **Search & filters**  
+  Tap the magnifier to open an inline search bar. The filter popover includes toggles for `Only mandatory todos`, `Filter by points` (Overview only), `Show private todos`, `Show created by`, a group-by selector (Time of day, Time block, Priority, individual tag groups), and a per-view time-of-day filter with an `Auto` option that hides items outside the current cycle.
+
+- **Grouping & layout controls**  
+  Overview is organised into pinned, overdue, waiting, inbox, today, tomorrow, future, blocked, recurring, paused, and other buckets. Day and Upcoming views support drag-and-drop onto date or time-of-day slots. The Weekly planner provides columns for each weekday plus a backlog sidebar so you can drag tasks into specific days and time slots.
+
+- **Quick import & mobile actions**  
+  The toolbar’s table icon launches the bulk import modal. On mobile, the header exposes a dedicated add icon that respects the current view’s context (e.g. Inbox adds items straight to the inbox).
+
+- **Selection toolbar**  
+  When multiple tasks are selected, the floating toolbar shows the count, enables one-click date moves, provides Move to Project/List popovers with search, and includes an “Are you sure?” delete guard.
+
+## 🔐 Global Settings & Privacy
+
+- `Settings → Features → Todos` controls sidebar badge math (include overdue, exclude overdue already planned, include today’s planned tasks, and include overplanned items), whether overdue tasks roll into Today/Tomorrow automatically, whether subtasks surface in list-style views, the default global subtask behaviour (sequential vs parallel), whether parent tasks stay visible while subtasks remain open, and how task points render (`Number`, `Border colour`, or `None`).
+- This same panel sets the default landing screen every time you open Todos.
+- Tasks marked **Private** hide their title unless you enable the “Show private todos” filter—handy when screensharing. Otherwise visibility follows their container: anyone with access to the parent list or project sees the task and its history.
+- Completed todos create entries in the Completed Todo Log and add 5 leaderboard points (plus the task’s extra weighting) while leaving the public timeline untouched.
+
+## 📊 Widgets & Dashboards
+
+- **Today home widget**: Enable it in `Settings → Features → Todos` to add a “Today” card to the home dashboard. Configure whether it shows overdue, overplanned, completed groups, whether quick add appears, and which task type (personal/work/both) it should respect. Quick add from the widget auto-sets today’s planned date.
+- **Summary page**: The Summary dashboard shows a “Tasks” stat—how many todos you completed today—alongside other streak metrics. Completed log entries also feed the leaderboard.
+
+## ⚡ Alfred & Quick Actions
+
+- `Cmd/Ctrl + K` opens Alfred, where you can create a todo, create multiple todos, spin up a list or project, jump straight to Inbox/Today/Upcoming, or open sharing managers. Spotlight search also returns existing todos, lists, and projects so you can edit without navigating manually.
+- The Today drawer can be toggled with `Alt + T`, giving you the compact view from anywhere in the app.
+- “Create multiple new todos” and “Create a new todo” are available from Alfred, the sidebar’s **+** buttons, and mobile add buttons.
+
+## ⌨️ Keyboard Shortcuts
+
+- `q`: focus the Quick add field on desktop.
+- `Cmd/Ctrl + K`: open Alfred for global task commands.
+- `Alt + T`: toggle the Today drawer.
+- Inside the quick menu: `D` (due date), `P` (planned date), `T` (tags), `J` (project), `L` (list), `A` (assignees).
+- Hold `Cmd/Ctrl` while clicking to multi-select. `Cmd/Ctrl`-click the avatar stack to assign or unassign yourself instantly.
+
+## 🏆 Timeline & Points
+
+- Each completion adds an entry to `completedTodoLog` and scores 5 base points on the leaderboard. The task’s own point value compounds that score based on priority, due date proximity, annoying level, mandatory flag, caps-lock/exclamation intensity, and any points contributed by list or project tags.
+- Lists and projects can override default priority and tags, so tasks inside those contexts inherit their weighting. Marking a project as **Super Important** adds a +50 bonus when its tasks are scored.
+- Private tasks conceal their titles on shared surfaces unless collaborators have explicit access through shared lists/projects and you opt to show private items.
+
+## 🔗 Integrations & Dependencies
+
+- **Planner & Weekly scheduling**: Planned date, time-of-day, and duration drive the Weekly planner board and the calendar integration. Dragging a task onto a planner slot or day column updates those fields; completing a recurring task clears linked planner events so future runs stay accurate.
+- **Pomodoro**: Start or add a task to the active Pomodoro session from hover actions or the todo context menu. Completing the Pomodoro reflects back on the task.
+- **Lists & Projects**: Tasks inherit points, tags, default assignees, and sharing rules from their parent list or project. Convert items between containers or move them in bulk from the multi-select toolbar. See [Projects](./projects) and [Lists](./lists) for container-specific behaviours.
+- **Menu bar & notifications**: Pinning a task to the menu bar keeps it visible in the desktop tray; you can also ping assigned teammates to send them a notification reminder.
+- **Summary & Leaderboard**: Completed Todo Log entries power the daily summary stat and overall leaderboard standings alongside other feature completions.
+
+## 💡 Tips & Edge Cases
+
+- Use bulk import for meeting prep or brain dumps—blank lines are ignored so you can paste raw notes.
+- When a task is blocked by another, add the parent in the “Blocked by” picker; Benji automatically tucks it under “Can’t be started yet” until dependencies clear.
+- Waiting chips act as reminders; hold `Alt`/`Option` and click the chip to clear both the waiting flag and its reason in one step.
+- Sequential subtasks (or sequential project/list sections) hide everything after the first incomplete item in Overview, keeping attention on the next actionable step.
+- Private todos are perfect for sensitive information while screensharing—flip the privacy toggle on the task and leave the global “Show private” filter off.
+- Ping teammates from the todo context menu whenever you need a response; Benji sends them a push notification with the task title.
+- The menu-bar pin is exclusive—pinning a second todo automatically unpins the first so your focus stays singular.
+- If you work from lists that always belong to someone, set a **Default assignee** on the list so every new todo is pre-assigned without extra clicks.

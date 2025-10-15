@@ -11,7 +11,8 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - **Trigger edge behaviors**: Complete a goal, switch units, post to the public timeline, or toggle privacy settings to observe downstream effects.
 - **Capture activation paths**: Record the exact clicks required to enable the feature, surface its widgets, expose related toggles, and adjust who can see timeline posts so the doc can spell them out verbatim.
 - **Stay user-facing**: Avoid database names, internal jargon, or implementation talk. Everything should read like guidance for a user, not a developer.
-- **Cluster related topics**: Keep configuration, sharing, AI, lists, and goals in discrete sections so readers don’t bounce between bullets to gather the full story.
+- **Cluster related topics**: Keep configuration, sharing, lists, and goals in discrete sections so readers don’t bounce between bullets to gather the full story.
+- **Skip empty sections**: If a feature has nothing meaningful to say about privacy, widgets, automation, etc., omit the section entirely—never add filler like “no widget” or “private by default.”
 
 ## Required Sections for Each Feature Page
 
@@ -47,25 +48,21 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - Document Alfred commands: how to launch them, what they prefill, and which templates appear. Mention when keyboard shortcuts are optional alternatives rather than requirements.
    - Mention other quick launchers (menu bar, Raycast, mobile widgets) if supported.
 
-7. **Automation & AI** (include when relevant)
-   - Include this section only when the feature actually runs background jobs, AI assistants, or automations.
-   - When applicable, explain how users trigger or monitor them, mention refresh steps, required integrations (e.g., OpenAI key), and where results surface in the UI.
-
-8. **Keyboard Shortcuts**
+7. **Keyboard Shortcuts**
    - Always list shortcuts relevant to the feature.
    - Check the main Benji repo (`~/webdev/benji`) for global shortcuts (e.g., `app/hooks/useGlobalHotkeys.tsx`, settings keyboard shortcut enums) and any feature-specific bindings.
    - Mention how to trigger them and when they’re optional versus required.
 
-9. **Timeline, Points & Privacy**
+8. **Timeline, Points & Privacy**
    - Specify what goes to the timeline, when it triggers (goal completion, manual share), and the exact point value it awards.
    - Identify every privacy toggle or sharing preference that controls those posts, including default audiences and how to change them.
    - Note whether timeline posts can be disabled entirely, kept private, or scoped to followers.
 
-10. **Integrations & Dependencies**
+9. **Integrations & Dependencies**
    - Note cross-feature links (summary rings, planner reminders, automations, etc.). Highlight planner scheduling or routine chaining when duration settings matter.
    - Call out how unit/timezone settings or other global preferences influence the feature.
 
-11. **Tips & Edge Cases**
+10. **Tips & Edge Cases**
    - Provide concise, actionable tips (templates for repetitive entries, bypass toggles for exceptions).
    - Warn about non-obvious behavior (weighted totals, backdated goals, refresh requirements).
 
@@ -78,12 +75,11 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Documented timeline behavior, point value, and the privacy setting that controls visibility (with default state).
 - [ ] Cataloged all widgets (home, summary, sidebar, etc.) and how to add/remove each one.
 - [ ] Described Alfred commands or other shortcuts tied to the feature.
-- [ ] Covered automation/AI behavior (if present) in a single section, including refresh steps and setup requirements.
 - [ ] Explained unit, timezone, or conversion rules that affect totals.
 - [ ] Captured any templates, automation hooks, or recurring tools specific to the feature.
 - [ ] Sanity-checked the write-up against real behavior (no assumptions, no filler).
 - [ ] Kept language user-facing—no database tables, internal class names, or engineering jargon.
-- [ ] Grouped related information (lists & sharing, AI, templates, goals, customization, etc.) so each topic appears in one clear section.
+- [ ] Grouped related information (lists & sharing, templates, goals, customization, etc.) so each topic appears in one clear section.
 - [ ] Clarified when keyboard shortcuts are optional versus the only way to act.
-- [ ] Omitted empty sections—if a topic genuinely has nothing to say, don’t include a placeholder.
+- [ ] Omitted empty sections—if a topic genuinely has nothing to say, skip the header instead of writing “not available”.
 - [ ] Documented feature-relevant keyboard shortcuts (global + local) with sources.

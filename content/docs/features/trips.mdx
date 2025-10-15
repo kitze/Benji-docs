@@ -1,0 +1,61 @@
+---
+title: "🧳 Trips"
+description: Plan upcoming travel, connect stays and transports, and spin up packing checklists in a single view
+---
+
+## ✨ What It Does
+
+Trips turns Benji into a lightweight travel cockpit. Create a trip with dates, transports, stays, and relevant activities, then let Benji generate packing tasks, track charging prep, and link project plans so every departure feels buttoned up.
+
+## 🚪 Access & Activation
+
+- Enable Trips from `Settings → Features → Trips` to expose the **Trips** page (and companion **Stays**/**Transports** sections) in the sidebar and mobile toolbar.
+- After toggling, refresh once if the navigation hasn’t updated yet—visibility persists per user.
+
+## 🧭 Core Workflow
+
+- Open the Trips list to see future and past travel grouped by time. Use the search bar or grouping dropdown to filter.
+- Click **Add Trip** to launch the trip form. You can:
+  - Name the trip and set location, start/end dates.
+  - Attach existing packing activities, projects, stays, and transports.
+  - Flag whether you’re staying at your own place or using your own transport.
+- Each card shows booking status badges (inbound/outbound transport and stay) and the date range at a glance. Use the card menu to edit, duplicate, or delete.
+- Open any trip to land in the travel dashboard: timeline pills for stays/transports, packing progress, charging board, and linked projects.
+
+## 🛠️ In-Feature Settings
+
+- The trip form supports multi-select pickers that pull from existing data:
+  - **Activities** determine which packing items auto-load when you “Start packing.”
+  - **Projects** attach TODO projects to the trip—handy for itinerary checklists.
+  - **Stays/Transports** prefill the timeline pills so you see the agenda at a glance.
+- Trip detail menu actions include:
+  - **Create a new project** or **Create a project from template** scoped to the trip.
+  - **Start packing**, **Refresh packing items**, **Sync with packing lists**, or **Start packing from scratch** once you’re adjusting checklists.
+- The packing board filters (Show packed items, Show charging items, Show items planned for the morning) persist per user so you can focus on what matters during prep.
+
+## ⚡ Alfred & Quick Actions
+
+- Spotlight (`Cmd/Ctrl + K`) exposes:
+  - **Create a new trip** → opens the form immediately.
+  - Navigation shortcuts to **Trips**, **Stays**, **Transports**, and packing activity/item screens.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Spotlight to create a trip or jump straight to the Trips page.
+
+## 🏆 Timeline & Points
+
+- Trips keep the public timeline and leaderboard unchanged—they act as organisational overlays on top of your packing and project data.
+
+## 🔗 Integrations & Dependencies
+
+- “Start packing” seeds the list with all **essential** packing items plus items tied to the trip’s selected activities.
+- The charging board pulls any packing item marked “Needs charging” and tracks status across **Not charged**, **Charging**, and **Charged** columns.
+- Linked projects render directly in the trip view, so you can manage trip-specific TODOs alongside packing progress.
+- Planner views can show trips (see `getTripsForPlanner`) so calendar mode reflects travel windows.
+
+## 💡 Tips & Edge Cases
+
+- Keep transports and stays updated—those pills double as quick-edit shortcuts for rebooking.
+- Use “Sync with packing lists” after you add new essential items so existing trips pick them up without a reset.
+- When you’re finished packing, “Start packing from scratch” clears statuses for the next outing while keeping the trip data intact.
