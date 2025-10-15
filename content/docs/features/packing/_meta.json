@@ -1,0 +1,11 @@
+{
+  "title": "🎒 Packing",
+  "icon": "🎒",
+  "defaultOpen": true,
+  "pages": [
+    "index",
+    "activities",
+    "stays",
+    "transports"
+  ]
+}
