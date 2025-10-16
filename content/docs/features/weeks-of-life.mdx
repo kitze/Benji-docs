@@ -1,0 +1,54 @@
+---
+title: "💀 Weeks of Life"
+description: Visualize your remaining time as a grid of weeks, with loved ones alongside
+---
+
+## ✨ What It Does
+
+Weeks of Life transforms your entire lifespan into a grid—one circle for every week you'll ever live. Past weeks glow green as reminders of time well spent, future weeks wait empty, and when you add contacts with birthdays, their faces appear on the week they're statistically likely to leave you behind. It's a sobering memento mori that makes "maybe I'll do that next year" feel uncomfortably finite.
+
+## 🚪 Access & Activation
+
+Enable Weeks of Life from `Settings → Features → Weeks of Life`. See the [Enabling Features guide](/docs/enabling-features) for details on feature toggles.
+
+Weeks of Life is a Pro feature.
+
+## 🧭 Core Workflow
+
+- Open the Weeks of Life page to see a grid with 52 columns (weeks per year) and as many rows as your selected life expectancy.
+- Each green circle marks a week you've already lived. Gray circles stretch into your future, waiting to be filled.
+- Hover any circle to see which year and week it represents.
+- If you haven't set a birthday yet, Benji prompts you to add one in your profile—the grid needs that anchor date to calculate what's passed and what remains.
+- Adjust your life expectancy using the settings icon (top-right popover) to recalculate the grid and stats.
+
+## 🛠️ In-Feature Settings
+
+- **Life expectancy selector**: Choose 60, 70, 80, 90, or 100 years from the gear icon popover. Changing this instantly redraws the grid and updates all stats. Your selection persists in local storage so the page remembers your choice.
+- **Contact overlays**: Contacts with birthdays who have `Show in weeks of life` enabled (the default) appear as avatars on the week when their life expectancy runs out. Hover a contact's avatar to see how many weeks you have left with them.
+
+## 🔐 Global Settings & Privacy
+
+- Weeks of Life stays entirely private—there are no timeline posts, no sharing toggles, and no public visibility options.
+- Feature visibility and menu placement are controlled from `Settings → Features → Weeks of Life`.
+
+## 📊 Widgets & Dashboards
+
+- The page displays three progress rings at the top:
+  - **Life progress**: percentage of your expected lifespan already lived
+  - **Year progress**: how far through the current calendar year you've traveled
+  - **Season progress**: tracks the current season (Winter, Spring, Summer, Autumn)
+- Two stat cards show **Years left** and **Weekends left** based on your life expectancy and today's date.
+
+## 🔗 Integrations & Dependencies
+
+- **Contacts**: Any contact with a birthday and `Show in weeks of life` enabled (default on) appears on the grid when their estimated time runs out. Manage this toggle in the contact editing form under `Settings → Features → Contacts` or when creating/editing a contact.
+- **Profile birthday**: You must set your birthday in your user profile before the grid can render. Without it, the page shows a prompt to add your birthday with a direct link to profile settings.
+- **Life expectancy calculation**: Benji uses the same life expectancy value for both you and your contacts. If a contact's birthday plus the expectancy falls within a given week, that contact's avatar replaces the empty circle.
+
+## 💡 Tips & Edge Cases
+
+- Contact avatars only appear if the contact has a birthday and the `Show in weeks of life` toggle remains on (it defaults to on when you add a contact).
+- Changing your life expectancy instantly recalculates weeks left, weekends left, and which week each contact's avatar lands on.
+- The grid always anchors to your birthday's year; if you were born mid-year, week 1 of year 0 still starts on January 1st of your birth year.
+- The stat cards update in real time—refresh the page to see progress ticks forward as days pass.
+- If you have many contacts with birthdays, their avatars cluster around similar ages, revealing how relationships tend to begin and end in cohorts.
