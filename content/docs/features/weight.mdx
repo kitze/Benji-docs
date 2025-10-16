@@ -1,0 +1,72 @@
+---
+title: "⚖️ Weight"
+description: Track weight changes, set goals, and join communities around your progress
+---
+
+## ✨ What It Does
+
+Weight keeps you accountable around one of the most common health metrics. Log your weight whenever you step on the scale, watch trends emerge on the graph, and celebrate progress toward your target—all without exporting CSVs or juggling spreadsheets. Goals show exactly how much remains and when you're on track, while weight clubs connect you with others in similar ranges who are also staying consistent.
+
+## 🚪 Access & Activation
+
+Enable Weight from `Settings → Features → Weight`. See the [Enabling Features guide](/docs/enabling-features) for details on feature toggles and visibility options.
+
+Weight requires a Pro subscription to access.
+
+## 🧭 Core Workflow
+
+- Add entries from the Weight page, the home widget, or Alfred (`Cmd/Ctrl + K` → "Log weight").
+- Each entry captures the weight value, optional body composition percentages (fat, muscle, bone), and the date.
+- The form defaults to today's date and your preferred unit (kilograms or pounds), so most logs take a few seconds.
+- The Weight page displays your most recent weight prominently, along with the change from your previous log, so you can see direction at a glance.
+
+## 🛠️ In-Feature Settings
+
+- **Unit toggle**: Switch between kilograms and pounds from the top-right of the Weight page. Benji converts everything behind the scenes, so historic logs and charts stay accurate.
+- **Goals**: Set target weights from the goal widget on the Weight page. Each goal includes a start date, optional end date, and target weight. Progress updates automatically with every new log, showing percentage complete, amount remaining, and days left. You can run multiple goals side-by-side—past goals remain attached to their original periods for historical context.
+- **30-Day Change widget**: Tracks how your weight has shifted over the last month, with a color-coded percentage to highlight trends (green for loss, amber for small gain, red for larger gain).
+- **Date filters and grouping**: Use the toolbar to focus on specific date ranges or group logs by month or year for easier review.
+
+## 🔐 Global Settings & Privacy
+
+- Weight privacy defaults to `Private` in `Settings → Privacy → Weight`, meaning only you can see your weight data and timeline posts.
+- Switch to `Public` to share your weight page with everyone, enable weight club participation, and make timeline posts visible to all.
+- Set it to `Followers` to scope visibility to people who follow you, keeping the data semi-public.
+- Timeline posts about weight logs automatically respect your privacy setting.
+
+## 📊 Widgets & Dashboards
+
+- **Home dashboard**: Enable **Show a home widget** in `Settings → Features → Weight` to pin the weight widget to your dashboard. It displays your most recent weight, date of the log, and a trend chart if you have multiple entries.
+- **Weight page sidebar**: Shows a progress chart of all your logs and weight clubs that match your current weight range.
+- **Public profile**: If your weight privacy is set to `Public`, your profile displays a six-month area chart of average monthly weights so visitors can see your journey.
+
+## ⚡ Alfred & Quick Actions
+
+Learn more about Alfred in the [Alfred & Spotlight guide](/docs/alfred-spotlight).
+
+- **Log weight**: opens the weight entry form with today's date and your preferred unit prefilled
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Alfred to access Weight commands
+
+## 🏆 Timeline & Points
+
+- Every weight log creates a timeline post comparing your current weight to the previous entry—messages like "I've lost 0.5kg" or "I've gained 1lb" depending on the change.
+- If your weight is unchanged, the post reads "I've maintained the same weight."
+- Posts inherit your Weight privacy setting, so they remain private, followers-only, or public based on your choice.
+- Weight logging does not currently award points in the leaderboard system.
+
+## 🔗 Integrations & Dependencies
+
+- **Weight Clubs**: Social feature that groups users in 10-kilogram bands (40kg, 50kg, 60kg, etc.) based on recent logs. Only users with `Public` weight privacy appear in clubs, and the clubs show people who have logged in the last 50 days. Your club is highlighted on the Weight page sidebar so you can see peers making similar progress.
+- **Goals integration**: Weight goals track progress toward specific targets. Logs that fall within a goal's date range automatically display the difference from the goal, keeping you aware of how close you are.
+- **Public profile integration**: Six-month historical weight data appears on your public profile when privacy is set to `Public`, offering a visual summary for visitors.
+
+## 💡 Tips & Edge Cases
+
+- Toggle between kilograms and pounds freely—Benji stores everything in a consistent format and converts for display, so you won't lose precision.
+- Weight clubs only appear if your privacy is `Public` and you've logged within the last 50 days. Switch your privacy setting to join the community around your weight range.
+- Multiple goals can run in parallel, which is handy if you're tracking a long-term target alongside a short-term milestone.
+- Body composition fields (fat, muscle, bone percentages) are optional but useful for tracking changes beyond the scale number—add them when your device or method supports those metrics.
+- If you're not seeing the home widget, confirm that **Show a home widget** is enabled in `Settings → Features → Weight`.
