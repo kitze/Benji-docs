@@ -1,0 +1,64 @@
+---
+title: "🏋️ Workouts"
+description: Plan training sessions, track every set, and reuse the routines that actually work
+---
+
+## ✨ What It Does
+
+Workouts is your training journal. Start a session, add the movements you intend to hit, log every set with weight, reps, and RPE, then finish to lock in the results. You can duplicate old workouts when you want a proven template, manage your personal exercise library, and surface break-time drills to stay loose between Pomodoros.
+
+## 🚪 Access & Activation
+
+- Enable **Workouts** from `Settings → Features → Workouts` (Pro). This adds the Workouts page, the dedicated “current workout” view, and the exercise library.
+- Use the Quick Add dialog (`Cmd/Ctrl + Shift + A`) or the command palette (`Cmd/Ctrl + K → Start a new workout`) to launch a fresh session without hunting through menus.
+
+## 🧭 Core Workflow
+
+- Start a workout from the Workouts page or via Spotlight; Benji creates an in-progress session and drops you into the Workout in Progress view.
+- Add movements from your library with **Add Exercise** or create a custom movement on the fly. Sets update live—track weight, reps, RPE, and mark them complete as you go.
+- Group supersets or circuits by assigning letters, duplicate sets for repeat efforts, and use the built-in plate calculator when you need loading guidance.
+- Finish the session when you’re done; Benji records `endedAt`, adds the workout to history, and triggers a “Workout Completed” timeline post with your privacy settings.
+- Prefer to log after the fact? Use **Log completed workout** from the Workouts list or Quick Add to create a finished workout with start/end times and notes.
+
+## 🛠️ In-Feature Settings
+
+- **Workouts list**: shows the active workout (if any) plus recent history. Search, multi-select, or duplicate and start any past workout in one click. Cards surface muscles worked and exercise counts.
+- **Workout sidebar**: date picker highlights days you trained; clicking a dot opens the workout detail page. Buttons let you jump straight to the exercise library or start a new session.
+- **Workout detail**: view every exercise instance and set, including supersets and warm-ups. Context menus let you edit, duplicate, or delete items without leaving the page.
+- **Exercise library**: two tabs separate your personal exercises from platform presets. Each exercise stores notes, media, muscle groups, and a **Show during break** toggle that feeds the Break Exercise widget.
+- **Current workout view**: manage the live session with headers showing elapsed time, quick actions to finish or cancel, exercise pickers, and per-set tools (duplicate, edit, remove).
+
+## 🔐 Global Settings & Privacy
+
+- `Settings → Privacy → Workouts` controls who can view your workout timeline posts and detail pages (defaults to `Private`).
+- Public profile widgets respect this setting; if you restrict workouts to yourself, nobody else sees the counts or completed sessions.
+
+## 📊 Widgets & Dashboards
+
+- **Break Exercise widget** (My Day): rotates through exercises flagged **Show during break**, perfect for mobility or activation between Pomodoros.
+- **User profile widget** (`/u/[username]`): highlights recent workouts for viewers who have access, pulling data straight from the Workouts history.
+
+## ⚡ Alfred & Quick Actions
+
+- `Cmd/Ctrl + K → Start a new workout`: begins an in-progress session with your default name.
+- `Cmd/Ctrl + K → Log completed workout`: opens the CRUD form so you can backfill a finished session.
+- `Cmd/Ctrl + K → Manage workout exercises`: jumps straight to the exercise library.
+
+## 🏆 Timeline & Points
+
+- Finishing a workout creates a `WorkoutCompleted` timeline post and awards **15 leaderboard points**.
+- Cancelling a workout removes the in-progress record and skips the timeline update, so only completed sessions affect points.
+
+## 🔗 Integrations & Dependencies
+
+- Exercises marked **Show during break** feed the Break Exercise widget, keeping recovery drills front and center.
+- Start or log sessions directly from Quick Add and Spotlight, so workouts slot into the same capture flow as todos and meals.
+- Duplication copies every exercise and set, resetting completion state so recurring programs are only a click away.
+- The “Workout in progress” card on the Workouts list and the dedicated `/my/workouts/current` page both read the same active session, so you can jump back into logging from desktop or mobile.
+
+## 💡 Tips & Edge Cases
+
+- Name workouts after the focus (“Pull Hypertrophy”, “Tempo Run Prep”) so you can find them quickly with the list search.
+- Use letters to group supersets or giant sets; Benji keeps the ordering clear on both desktop and mobile.
+- Mark sets as warm-up, drop set, or failure to track intent; filtering by type makes post-session analysis easier.
+- Leaving a workout without finishing keeps it in-progress—finish or cancel explicitly if you don’t want it lingering in history.

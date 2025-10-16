@@ -1,0 +1,73 @@
+---
+title: "🍅 Pomodoros"
+description: Run focused work sprints, capture breaks, and keep daily momentum visible across Benji
+---
+
+## ✨ What It Does
+
+Pomodoros turn Benji into a focus companion. Start a timer, keep your todos in view, and let Benji log the sprint, the follow-up break, and the feedback you leave when you finish. Progress feeds widgets, leaderboards, and timeline posts so you always know how close you are to your daily goal.
+
+## 🚪 Access & Activation
+
+- Enable **Pomodoros** from `Settings → Features → Pomodoros` (Pro feature). This adds the Pomodoros page, header timer widget, and My Day widgets to your navigation.
+- After toggling, refresh once if the sidebar or My Day layout doesn’t refresh immediately.
+
+## 🧭 Core Workflow
+
+- Launch a session from the header tomato icon, the command palette (`Cmd/Ctrl + K → Start a pomodoro`), the **Pomodoro** button on the page, or a todo row’s menu when you want the sprint linked to a task.
+- The **Active Pomodoro** dialog shows a live countdown, the todo list you’re aiming to clear, space for notes, plus quick buttons to finish, extend (+/− 5 minutes), or cancel.
+- Completing a pomodoro automatically creates a break using your default break duration. You can mark the break done or cancelled from the same dialog or from the timeline on the Pomodoros page.
+- When you finish, Benji optionally asks for focus feedback (e.g., `Deep work`, `Distracted`) and your working mode (`Sitting` vs `Standing`) so the widgets and graphs stay accurate.
+- Cancelling a pomodoro stops the timer, records the cancellation reason, and returns you to the dialog to start a fresh sprint.
+
+## 🛠️ In-Feature Settings
+
+- The Pomodoros page shows the current day’s timeline: completed sprints, breaks, and “blank space” gaps so you can see where time slipped. Hover or long-press any entry to edit, delete, or adjust durations.
+- The sidebar packs a day navigator plus three smart widgets:
+  - **Pomodoros Widget**: ring progress toward the daily goal, plus a timer for any active sprint.
+  - **Weekly Pomodoros**: a seven-day bar chart with total counts and time.
+  - **Working Mode**: compares sitting vs standing time using the focus data you log.
+- Lists beneath each timeline event surface linked todos and notes so you can retrace what you worked on.
+
+## 🔐 Global Settings & Privacy
+
+- `Settings → Features → Pomodoros` lets you set default pomodoro and break durations, your daily pomodoro goal, whether ambient sound should toggle automatically, and if Benji should request focus feedback after each sprint.
+- `Settings → Privacy → During pomodoros` controls who can see that you have an active pomodoro (for the “People doing pomodoros” avatars and timeline posts).
+- The settings modal is reachable directly from the active pomodoro dialog, so you can tweak durations and toggles mid-session.
+
+## 📊 Widgets & Dashboards
+
+- **Pomodoros widget** (My Day / sidebar): shows goal progress, active countdown, and links straight to the manager dialog.
+- **Weekly Pomodoros widget**: live chart of the last seven days, available on mobile and desktop.
+- **Working Mode widget**: visualises how much sitting vs standing time you logged across completed pomodoros.
+- All widgets respect preview data when you configure My Day, and open the Pomodoros page when clicked.
+
+## ⚡ Alfred & Quick Actions
+
+- `Cmd/Ctrl + K → Start a pomodoro` spins up a new session immediately.
+- Spotlight also jumps to the Pomodoros page, so you can review history without mousing through the sidebar.
+- When you launch the Quick Add dialog, the Pomodoros tile starts a sprint with your default settings.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Alt + P`: start a pomodoro or reopen the active pomodoro dialog.
+- `Cmd/Ctrl + K`: open Spotlight for **Start a pomodoro** or navigation shortcuts.
+
+## 🏆 Timeline & Points
+
+- Completed pomodoros award **10 leaderboard points** each; completed breaks add **1 point**.
+- When you hit your daily pomodoro goal, Benji publishes a “Daily Pomodoros Completed” timeline entry that summarises counts and time spent. The post respects your **During pomodoros** privacy setting.
+
+## 🔗 Integrations & Dependencies
+
+- Ambient Sounds can auto-enable when a pomodoro starts and mute when it ends if you toggle the setting on.
+- Todos inside the active dialog stay linked to the sprint—add new ones on the fly or mark them complete without leaving the modal.
+- Planner views and exports can include pomodoros via `Planner → filters`, giving you a time-blocked audit of focus sessions.
+- The “People doing pomodoros” strip in the dialog shows teammates currently running a pomodoro (subject to their privacy settings).
+
+## 💡 Tips & Edge Cases
+
+- Use the ±5 minute controls in the dialog when a session needs a quick extension or early wrap-up.
+- Notes persist when you close the dialog—capture what helped (or distracted you) before you hit finish.
+- If ambient sound toggling is on, Benji will start your mix automatically; combine it with a saved preset in Ambient Sounds for instant focus.
+- Cancelling still logs the sprint for reference, but it won’t count toward goals or leaderboard points. Finish early instead if you want it credited while ending ahead of schedule.
