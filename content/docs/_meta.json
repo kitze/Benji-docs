@@ -4,6 +4,8 @@
   "root": true,
   "pages": [
     "index",
+    "enabling-features",
+    "alfred-spotlight",
     "benji-ai",
     "features"
   ]

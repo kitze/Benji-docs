@@ -1,6 +1,18 @@
 # Feature Doc Spec (Internal)
 
-Use this spec every time we add or update a feature page. It exists to prevent shallow write-ups and make sure each doc reflects how the feature behaves inside the product—settings, widgets, privacy, shortcuts, timeline ties, and public visibility controls included. Only publish facts you can confirm directly in the product or source; if you’re guessing, stop and verify.
+Use this spec every time we add or update a feature page. It exists to prevent shallow write-ups and make sure each doc reflects how the feature behaves inside the product—settings, widgets, privacy, shortcuts, timeline ties, and public visibility controls included. Only publish facts you can confirm directly in the product or source; if you're guessing, stop and verify.
+
+## ⛔ ABSOLUTE PROHIBITION: NO CODE REFERENCES
+
+**NEVER, EVER include:**
+- Footnote references like `[^feature-flag]` or `[^mood-tools]`
+- Footnote definitions at the bottom of files (e.g., `[^xyz]: path/to/file.ts:123-456`)
+- File paths (e.g., `pages/api/ai/tools/logHydrationTool.ts`)
+- Line numbers (e.g., `:1-66` or `:123`)
+- Database table names (e.g., `ProblemLog`, `schema.prisma`)
+- Class names or technical implementation details
+
+**These docs are for USERS, not DEVELOPERS.** If you find yourself wanting to reference code, STOP and rewrite it as user-facing behavior instead.
 
 ## Prep Work Before Writing
 
@@ -10,7 +22,7 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - **Read supporting code**: Scan `pages/my/<feature>/**`, `app/features/<feature>/**`, Spotlight/Alfred command definitions, privacy settings, goal/template modules, and point-system config. We want verified behavior, not implementation details.
 - **Trigger edge behaviors**: Complete a goal, switch units, post to the public timeline, or toggle privacy settings to observe downstream effects.
 - **Capture activation paths**: Record the exact clicks required to enable the feature, surface its widgets, expose related toggles, and adjust who can see timeline posts so the doc can spell them out verbatim.
-- **Stay user-facing**: Avoid database names, internal jargon, or implementation talk. Everything should read like guidance for a user, not a developer.
+- **Stay user-facing**: Avoid database names, internal jargon, implementation talk, or code references. Everything should read like guidance for a user, not a developer. **NEVER include footnote references to code paths, file locations, or technical implementation details.**
 - **Cluster related topics**: Keep configuration, sharing, lists, and goals in discrete sections so readers don’t bounce between bullets to gather the full story.
 - **Skip empty sections**: If a feature has nothing meaningful to say about privacy, widgets, automation, etc., omit the section entirely—never add filler like “no widget” or “private by default.”
 
@@ -21,8 +33,9 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - Keep it user-facing—think of it as the elevator pitch that frames the rest of the doc.
 
 1. **Access & Activation**
-   - Explain how to enable the feature if it’s hidden.
-   - Note any feature flags, device requirements, or permissions—never mention pricing tiers or plans.
+   - Keep this section SHORT. Simply state: "Enable [Feature] from `Settings → Features → [Name]`" and link to the [Enabling Features guide](/docs/enabling-features).
+   - Only add extra detail if this feature has unique activation requirements beyond the standard pattern.
+   - Never mention pricing tiers or plans.
 
 2. **Core Workflow**
    - Describe the default logging/usage flow (prefilled fields, save behavior, syncing).
@@ -45,8 +58,10 @@ Use this spec every time we add or update a feature page. It exists to prevent s
    - For each widget, describe what it shows, how it updates (live vs. manual), configuration limits, and the exact steps to add/remove it.
 
 6. **Alfred & Quick Actions**
-   - Document Alfred commands: how to launch them, what they prefill, and which templates appear. Mention when keyboard shortcuts are optional alternatives rather than requirements.
-   - Mention other quick launchers (menu bar, Raycast, mobile widgets) if supported.
+   - Link to the main [Alfred & Spotlight guide](/docs/alfred-spotlight) at the start of this section.
+   - List only the feature-specific Alfred commands (e.g., "Create a new habit", "Log hydration").
+   - Do NOT re-explain what Alfred/Spotlight is or how to open it—that's in the dedicated guide.
+   - Mention when keyboard shortcuts are optional alternatives rather than requirements.
 
 7. **Keyboard Shortcuts**
    - Always list shortcuts relevant to the feature.
@@ -78,8 +93,12 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Explained unit, timezone, or conversion rules that affect totals.
 - [ ] Captured any templates, automation hooks, or recurring tools specific to the feature.
 - [ ] Sanity-checked the write-up against real behavior (no assumptions, no filler).
-- [ ] Kept language user-facing—no database tables, internal class names, or engineering jargon.
+- [ ] Kept language user-facing—no database tables, internal class names, engineering jargon, or code file references.
+- [ ] **NEVER included footnote references to code paths** (e.g., `[^feature-flag]: db/schema.prisma:952-955`).
+- [ ] Linked to the [Alfred & Spotlight guide](/docs/alfred-spotlight) instead of re-explaining it.
+- [ ] Linked to the [Enabling Features guide](/docs/enabling-features) for standard activation patterns.
 - [ ] Grouped related information (lists & sharing, templates, goals, customization, etc.) so each topic appears in one clear section.
 - [ ] Clarified when keyboard shortcuts are optional versus the only way to act.
-- [ ] Omitted empty sections—if a topic genuinely has nothing to say, skip the header instead of writing “not available”.
+- [ ] Omitted empty sections—if a topic genuinely has nothing to say, skip the header instead of writing "not available".
 - [ ] Documented feature-relevant keyboard shortcuts (global + local) with sources.
+- [ ] **⛔ VERIFIED: Zero code references, zero footnotes, zero file paths, zero line numbers in the entire document.**

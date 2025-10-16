@@ -1,0 +1,68 @@
+---
+title: "🙂 Mood"
+description: Track how you feel, spot patterns, and keep the log tied to your day
+---
+
+## ✨ What It Does
+
+Mood keeps a lightweight 1–5 check-in for how you feel (Awful → Rad), ties optional notes and timestamps to each entry, and surfaces your average on My Day and Summary so streaks or dips stand out without filling a journal.
+
+## 🚪 Access & Activation
+
+Mood ships enabled by default and already appears in the sidebar favorites list. If you need to adjust its visibility, open `Settings → Features → Mood` to toggle the feature on/off, pin it to the sidebar or mobile toolbar, and enable **Show a home widget** for the My Day dashboard.
+
+See the [Enabling Features guide](/docs/enabling-features) for more details on feature toggles.
+
+## 🧭 Core Workflow
+
+- Hit **Add Mood Log** on the Mood page to open the modal. The form captures an optional date, the required mood rating, and an optional note.
+- The rating shows five labeled faces—from Awful (1) to Rad (5)—and defaults to the neutral "Meh" value so you can log with a single click.
+- The date field pre-fills with the middle of the day you're browsing and respects your personal timezone; you can backdate or leave it empty to fall back to the log's creation time.
+- Saving an entry drops a card into the grouped list (newest by selected date), showing the emoji, label, how long ago you logged it, and your note. Click the card to reopen the editor or use the menu/long-press actions to delete.
+
+## 🛠️ In-Feature Settings
+
+- **Search** is instant and filters on both the mood label and any note text.
+- The **date-range picker** filters in your timezone; group the list by Date, Mood, or Created Date using the grouping selector beside it.
+- Hold `Cmd/Ctrl` (desktop) or long-press (touch) to enter selection mode, then use the floating toolbar to Select all, Cancel, or bulk delete the chosen logs.
+
+## 🔐 Global Settings & Privacy
+
+- Feature visibility, sidebar pinning, mobile toolbar placement, and the home widget toggle all live inside `Settings → Features → Mood`.
+- Daily check-ins include a "How do you feel?" step when `Settings → Daily Check-in → Show mood` remains on (it is by default). Turning it off hides the prompt.
+- Mood logs stay private to your account and do not post to the timeline.
+
+## 📊 Widgets & Dashboards
+
+- Enable **Show a home widget** in feature settings, then add the **Mood** widget on My Day to see the current average mood and jump straight to the Mood page.
+- The Summary page automatically shows a Mood ring whenever the selected day has entries, highlighting how many logs landed in each state.
+
+## ⚡ Alfred & Quick Actions
+
+Learn more about Alfred in the [Alfred & Spotlight guide](/docs/alfred-spotlight).
+
+- `Cmd/Ctrl + K` opens Alfred; choose **Log mood** to pop the same modal from anywhere.
+- The Quick Add dialog (the global "+") also exposes **Mood log** so you can capture a feeling without leaving the current view.
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Alfred and launch **Log mood**
+- `Cmd/Ctrl + I`: open Benji AI, which can log a mood entry conversationally (see Integrations below)
+
+## 🏆 Timeline & Points
+
+- Every mood log grants 1 point toward the leaderboard but does not publish a timeline post or trigger sharing.
+
+## 🔗 Integrations & Dependencies
+
+- Completing the Daily Check-in with a selected mood automatically writes a mood log in the background.
+- Benji AI understands mood logging: ask it to "log that I feel 4/5, pretty upbeat" and it will create the entry with an optional note.
+- New-user onboarding nudges you here—the Usage Checklist includes "Log mood" and marks it complete once you create one.
+- The Mood widget pulls aggregated data, so deleting logs updates the widget and Summary instantly.
+
+## 💡 Tips & Edge Cases
+
+- Backdate responsibly: the date value overwrites ordering, but leaving it blank keeps the log grouped by creation time.
+- Editing a log reuses the same modal with your previous rating already selected—even older entries stored differently convert back automatically.
+- Bulk clean-up is fastest in selection mode: select a grouping (for example, "With Note"), press Select all, then delete in one go.
+- If you rely on AI logging, keep Alfred handy—`Cmd/Ctrl + K` then "Log mood" works even when AI is busy.
