@@ -1,0 +1,118 @@
+---
+title: "✨ Affirmations"
+description: Write personal affirmations, quotes, and reminders that surface in your daily check-in routine
+---
+
+## ✨ What It Does
+
+Affirmations gives you a private space to store personal affirmations, inspirational quotes, mottos, or important reminders that you want to revisit daily. Write meaningful statements once, then choose how they surface in your morning routine—as simple text to read, checkboxes to acknowledge, or typed exercises that require you to write out the full affirmation. A home widget shuffles through your collection for daily inspiration, and optional end-to-end encryption keeps your most personal thoughts secure.
+
+## 🚪 Access & Activation
+
+Enable Affirmations from `Settings → Features → Affirmations` and follow the [Enabling Features guide](/docs/enabling-features) for the standard activation flow.
+
+## 🧭 Core Workflow
+
+### Creating an Affirmation
+
+1. Navigate to `Affirmations` in your sidebar
+2. Click **Add affirmation**
+3. Enter your affirmation text in the textarea (supports multi-line text)
+4. Choose whether to **Show in widget** (enabled by default)
+5. Select how the affirmation appears in your **Daily check-in**:
+   - **Don't show**: Hidden from daily check-in
+   - **Show as checkbox**: You'll check it off each morning
+   - **Text**: Displays as read-only text (automatically counts as complete)
+   - **Type**: Requires typing the full affirmation to proceed
+6. Click **Save**
+
+Your affirmations appear as cards on the main page, ordered with newest first.
+
+### Editing & Deleting
+
+- **Edit**: Click the **Edit** button on any affirmation card, make changes, and save
+- **Delete**: Click the **Delete** button and confirm—this permanently removes the affirmation
+
+## 🛠️ Settings Inside the Feature
+
+Each affirmation has two configuration options:
+
+### Show in Widget
+
+Toggle whether the affirmation appears in the My Day home widget. When enabled (default), the affirmation joins the rotation for daily display. Disable this if you want the affirmation available only in your check-in routine.
+
+### Daily Check-in Setting
+
+Controls how the affirmation appears in your morning check-in:
+
+- **Don't show**: Completely hidden from check-in
+- **Show as checkbox**: Appears with a checkbox you must check to proceed—useful for affirmations you want to consciously acknowledge
+- **Text**: Displays as plain text and automatically counts as complete—ideal for reading without interaction
+- **Type**: Requires typing the entire affirmation with 96% accuracy to continue—forces active engagement and memorization
+
+The typing mode uses case-insensitive comparison and allows minor typos, so you don't need letter-perfect accuracy.
+
+## 🔐 Global Settings & Privacy
+
+### Daily Check-in Toggle
+
+Navigate to `Settings → Daily Check-in` and use the **Show affirmations** checkbox to control whether affirmations appear in your morning check-in routine. This toggle is enabled by default. When disabled, affirmations remain accessible on their feature page but won't interrupt your check-in flow.
+
+### Optional Encryption
+
+Affirmations support end-to-end encryption for sensitive personal content. To enable:
+
+1. Click the **Encryption Settings** widget in the desktop header
+2. Set a custom encryption key (password)
+3. Save your key—it's stored only in your browser's local storage, never on the server
+
+Once encryption is enabled:
+- All new affirmations are automatically encrypted before storage
+- You must provide your encryption key to view or edit existing affirmations
+- If you lose your key, your encrypted affirmations become permanently inaccessible (no recovery mechanism exists)
+- The encryption key is never transmitted to or stored on the server
+
+To view or edit affirmations when encryption is active, ensure your key is set. If the app detects encryption without a key, you'll see: "Encryption required - Set your encryption key to view and edit affirmations."
+
+### Privacy
+
+Affirmations are completely private by default. They never post to your timeline, don't appear in public feeds, and aren't visible to other users. The feature has no social or sharing components.
+
+## 📊 Widgets & Dashboards
+
+### My Day Widget
+
+The Affirmations widget appears on your My Day page and displays a single random affirmation from those marked to **Show in widget**.
+
+**Widget Features:**
+- Shows one random affirmation on each page load
+- **Shuffle button**: Click to randomly select a different affirmation (appears only when you have multiple affirmations enabled for the widget)
+- **Add button**: Opens the affirmation creation modal directly from the widget
+- **Empty state**: Displays "No affirmations." if none are configured to show in the widget
+
+## 🔗 Integrations & Dependencies
+
+### Daily Check-in Integration
+
+Affirmations integrate deeply with the daily check-in modal, appearing as a step in your morning routine when:
+- The global setting `Settings → Daily Check-in → Show affirmations` is enabled
+- At least one affirmation has a daily check-in setting other than "Don't show"
+- Your encryption key is available (if encryption is enabled)
+
+During the check-in, affirmations appear in three possible modes (checkbox, text, type) based on your per-affirmation settings. You must complete all visible affirmations before proceeding to the next check-in step. A progress indicator shows how many affirmations you've completed out of the total.
+
+### Encryption Dependencies
+
+When encryption is enabled, all affirmation operations require your encryption key to be present in browser local storage. If you clear your browser data or switch devices, you'll need to re-enter your encryption key via the Encryption Settings widget before accessing your affirmations.
+
+## 💡 Tips & Edge Cases
+
+- **Mix display modes**: Combine checkbox, text, and typing modes across your affirmations to create variety in your morning routine—check off some, read others, and type the most important ones for deeper engagement
+- **Widget curation**: Disable **Show in widget** for affirmations you only want in your check-in routine, keeping your daily widget focused on your most inspiring statements
+- **Typing mode tolerance**: The 96% similarity threshold means you can make minor typos and still pass—don't stress about perfect spelling, just type naturally
+- **Encryption caution**: Only enable encryption if you truly need it, and immediately store your encryption key in a password manager. Lost keys mean permanently inaccessible affirmations with no recovery option
+- **Check-in bypass**: If you want to skip affirmations on a particular day, disable the `Settings → Daily Check-in → Show affirmations` toggle temporarily, then re-enable it later
+- **Widget empty state**: If all your affirmations have **Show in widget** disabled, the widget displays "No affirmations." even though affirmations exist on the main page
+- **Single-affirmation shuffle**: The shuffle button appears even with only one affirmation in the widget rotation, but clicking it does nothing useful—add more affirmations for meaningful shuffling
+- **No tracking**: The app doesn't track which affirmations you've completed on which days. Daily check-in only records that you finished check-in, not which specific affirmations you engaged with
+- **Newest first**: Affirmations always display newest first with no manual reordering—create newer ones to prioritize them at the top of the list

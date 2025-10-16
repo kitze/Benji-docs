@@ -4,6 +4,7 @@
   "defaultOpen": true,
   "pages": [
     "activities",
+    "affirmations",
     "todos",
     "food",
     "habits",
