@@ -2,9 +2,11 @@
 
 Use this spec every time we add or update a feature page. It exists to prevent shallow write-ups and make sure each doc reflects how the feature behaves inside the product—settings, widgets, privacy, shortcuts, timeline ties, and public visibility controls included. Only publish facts you can confirm directly in the product or source; if you're guessing, stop and verify.
 
-## ⛔ ABSOLUTE PROHIBITION: NO CODE REFERENCES
+## ⛔ ABSOLUTE PROHIBITIONS
 
 **NEVER, EVER include:**
+
+### No Code References
 - Footnote references like `[^feature-flag]` or `[^mood-tools]`
 - Footnote definitions at the bottom of files (e.g., `[^xyz]: path/to/file.ts:123-456`)
 - File paths (e.g., `pages/api/ai/tools/logHydrationTool.ts`)
@@ -13,6 +15,12 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - Class names or technical implementation details
 
 **These docs are for USERS, not DEVELOPERS.** If you find yourself wanting to reference code, STOP and rewrite it as user-facing behavior instead.
+
+### No Pricing or Plan Mentions
+- **NEVER mention pricing tiers, plans, "Pro features", "Free features", or subscription levels**
+- Benji offers a 5-day trial with access to all features, after which the app requires a subscription to continue use
+- There is no distinction between "free" and "paid" features—all features work the same way for all users during their access period
+- Any mention of pricing or tiers is unnecessary and confusing to users
 
 ## Prep Work Before Writing
 
@@ -35,7 +43,6 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 1. **Access & Activation**
    - Keep this section SHORT. Simply state: "Enable [Feature] from `Settings → Features → [Name]`" and link to the [Enabling Features guide](/docs/enabling-features).
    - Only add extra detail if this feature has unique activation requirements beyond the standard pattern.
-   - Never mention pricing tiers or plans.
 
 2. **Core Workflow**
    - Describe the default logging/usage flow (prefilled fields, save behavior, syncing).
@@ -102,3 +109,4 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - [ ] Omitted empty sections—if a topic genuinely has nothing to say, skip the header instead of writing "not available".
 - [ ] Documented feature-relevant keyboard shortcuts (global + local) with sources.
 - [ ] **⛔ VERIFIED: Zero code references, zero footnotes, zero file paths, zero line numbers in the entire document.**
+- [ ] **⛔ VERIFIED: Zero pricing mentions, zero "Pro feature" labels, zero plan/tier references in the entire document.**

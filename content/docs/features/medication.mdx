@@ -1,0 +1,150 @@
+---
+title: "💊 Medication"
+description: Track medications, prescriptions, and intake logs with dosage timing and adherence monitoring
+---
+
+## ✨ What It Does
+
+Medication keeps your entire medication regimen organized—from adding new medications to tracking prescriptions with specific requirements and logging every dose you take. Set up medications once with dosage details and food interaction rules, create prescriptions for time-bound treatment plans, define requirements for exact timing and amounts, then log your intake with quick-tap buttons that capture whether you took it, skipped it, or missed it entirely. The feature eliminates guesswork around "did I take that pill?" and surfaces your adherence history on your timeline.
+
+## 🚪 Access & Activation
+
+The Medication feature is accessible from the Medicine section in your sidebar. Navigate to `Medicine → Medicine` to manage your medication list, view prescriptions, and log intake.
+
+## 🧭 Core Workflow
+
+### Adding a New Medication
+
+1. Go to `Medicine → Medicine` and click **Add medication**
+2. Fill in the medication details:
+   - **Name** (required)
+   - **Type**: Pill, Liquid, Injection, or Other
+   - **How to take**: Choose from Doesn't matter, With food, On empty stomach, After food, or Before food
+   - **Short description**: Quick identifier for personal reference
+   - **Detailed notes**: Optional—use the **Ask AI** button to auto-fill information about the medication
+3. Optionally specify eating restrictions (can't eat before/after with duration in minutes)
+4. Save the medication
+
+### Creating a Prescription
+
+1. From a medication's detail page, go to the **Prescriptions** tab
+2. Click **Add prescription**
+3. Set the time period:
+   - **Start date** (required): When to begin taking the medication
+   - **End date** (optional): When to stop—leave blank for ongoing prescriptions
+   - **Prescription date** (optional): When it was written
+4. Add overall dosage information and notes
+5. Save the prescription
+
+### Defining Requirements (Dosage & Timing)
+
+Requirements specify exactly how much and when to take a medication within a prescription period.
+
+1. From a prescription's detail page, go to the **Requirements** tab
+2. Click **Add requirement**
+3. Specify:
+   - **Dosage** (required): e.g., "1 pill" or "10 ml"
+   - **Time of day**: Morning, Afternoon, Evening, Night, or Any
+   - **Exact time** (optional): Set a specific time in HH:MM format for precise scheduling
+4. Add optional notes
+5. Save the requirement
+
+You can create multiple requirements per prescription (e.g., "1 pill morning" and "1 pill evening").
+
+### Logging Medication Intake
+
+**Quick-log from requirements:**
+
+1. Go to `Medicine → Prescriptions` and select an active prescription
+2. View the **Requirements** tab
+3. For today's requirements, click one of the status buttons:
+   - ✅ **Taken**: Logs the medication as taken
+   - ➡️ **Skipped**: Logs that you intentionally skipped it
+   - 😥 **Missed**: Logs that you forgot or missed the dose
+
+**Manual log:**
+
+1. Go to `Medicine → Logs` and click **Log medication**
+2. Select the medication from the dropdown
+3. Set when you took it (date/time picker defaults to now)
+4. Optionally adjust dosage if different from your usual amount
+5. Add optional notes
+6. Save
+
+Each log entry captures the medication taken, timestamp, actual dosage, and status.
+
+## 🛠️ In-Feature Settings
+
+### Medication Form Settings
+
+- **Type**: Select Pill, Liquid, Injection, or Other to categorize the medication
+- **How to take**: Define food interaction rules (With food, On empty stomach, etc.)
+- **Take at exact time**: Toggle whether timing must be precise
+- **Eating restrictions**: Specify if you can't eat before/after taking it, with custom durations in minutes
+- **AI lookup**: Use the **Ask AI** button to automatically fetch and fill in medication details
+
+### Prescription Settings
+
+- **Start date**: Required—defines when the medication regimen begins
+- **End date**: Optional—leave blank for ongoing prescriptions
+- **Dosage override**: Can override the medication's default food interaction rules at the prescription level
+
+### Requirement Settings
+
+- **Time of day priority**: Requirements are automatically sorted by time of day (Morning → Afternoon → Evening → Night → Any)
+- **Exact time**: Optional HH:MM format for precise scheduling
+- **Dosage override**: Can differ from the prescription's overall dosage
+
+### Log Management
+
+- **Grouping**: Medication logs are grouped by date by default—toggle grouping in the logs view
+- **Search**: Filter logs by notes or dosage content
+- **Bulk operations**: Use multi-select to edit or delete multiple log entries
+
+## 🔐 Global Settings & Privacy
+
+Medication data follows your default privacy settings. All medication information—including logs—is private by default and only visible to you. Medication logs can appear on your timeline (see Timeline & Points below).
+
+## 📊 Widgets & Dashboards
+
+The Medication feature doesn't have dedicated dashboard widgets, but integrates with other surfaces:
+
+- **My Day**: Medication logs appear in your daily summary view with timezone-adjusted timestamps
+- **Timeline**: Each medication log creates a timeline post with a green pill icon showing the medication name and dosage
+
+## 🏆 Timeline & Points
+
+- Every medication log you create posts to your timeline automatically
+- Timeline posts display with a green pill icon and show the medication name plus dosage
+- Each log awards **1 point** to the leaderboard under the "Medication logs" point system
+- Deleting a log removes the points and corresponding timeline post
+- Privacy for timeline posts follows your default settings
+
+## 🔗 Integrations & Dependencies
+
+### AI Integration
+
+The Medication feature has deep AI integration:
+
+- **Ask AI button**: Automatically fetch medication information to populate notes
+- **AI chat commands**: Ask Benji's AI to create medications, prescriptions, requirements, or log intake directly from conversation
+- **Smart logging**: When you tell the AI you took a medication, it automatically links logs to active prescriptions and requirements when applicable
+
+### Timezone Handling
+
+All timestamps adjust to your configured timezone, so medication logs display correctly regardless of when you traveled or changed your timezone setting.
+
+### My Day Integration
+
+Today's medication logs appear in your My Day view alongside other daily activities, providing a complete picture of your day.
+
+## 💡 Tips & Edge Cases
+
+- **Use requirements for structured regimens**: If you take medication at consistent times, create requirements instead of manually logging each dose—you'll get quick-tap buttons to log with one click
+- **Status tracking matters**: Use Taken/Skipped/Missed status to track adherence patterns. Skipped means intentional (e.g., doctor's advice), while Missed indicates forgetting
+- **One-off medications**: For medications you take occasionally without a prescription schedule, log them directly without creating prescriptions or requirements
+- **Dosage variations**: If you take a different amount than usual, log it manually and adjust the dosage field—your requirement's dosage won't change
+- **AI-powered setup**: Use the Ask AI button when adding new medications to save time researching proper usage and food interactions
+- **End dates for temporary treatments**: Set an end date on prescriptions for antibiotics or short-term treatments, but leave it blank for ongoing medications like daily vitamins
+- **Prescription overlap**: You can have multiple active prescriptions for the same medication if your dosage changes—just create a new prescription with a new start date
+- **Search by content**: Use the search bar in logs to find specific notes or dosage amounts when reviewing your medication history
