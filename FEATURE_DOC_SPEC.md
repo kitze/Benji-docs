@@ -34,10 +34,18 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 - **Cluster related topics**: Keep configuration, sharing, lists, and goals in discrete sections so readers don’t bounce between bullets to gather the full story.
 - **Skip empty sections**: If a feature has nothing meaningful to say about privacy, widgets, automation, etc., omit the section entirely—never add filler like “no widget” or “private by default.”
 
+## Formatting & Style
+
+**Emoji Usage:**
+- **ALWAYS include an emoji in the page title** (e.g., `title: "🍽️ Fasting"`)
+- **ALWAYS add emojis to every section header** to make the doc visually engaging and easy to scan
+- Choose emojis that match the section topic (e.g., ✨ for "What It Does", 🚪 for "Access & Activation", 🧭 for "Core Workflow", ⚙️ for "Settings", 🔐 for "Privacy", 📊 for "Widgets", ⚡ for "Alfred", ⌨️ for "Keyboard Shortcuts", 🏆 for "Timeline & Points", 🔗 for "Integrations", 💡 for "Tips")
+- Refer to existing feature docs (like habits.mdx) for emoji patterns and consistency
+
 ## Required Sections for Each Feature Page
 
 0. **What It Does**
-   - Start with a short paragraph that explains the feature’s purpose, core value, and how it feels to use before diving into setup or workflows.
+   - Start with a short paragraph that explains the feature's purpose, core value, and how it feels to use before diving into setup or workflows.
    - Keep it user-facing—think of it as the elevator pitch that frames the rest of the doc.
 
 1. **Access & Activation**
@@ -90,7 +98,9 @@ Use this spec every time we add or update a feature page. It exists to prevent s
 
 ## Writing Checklist
 
-- [ ] Opened with a concise “What It Does” overview that explains the feature in plain language.
+- [ ] **Added emoji to the page title** (e.g., `title: "🍽️ Fasting"`).
+- [ ] **Added emojis to every section header** for visual appeal and scannability.
+- [ ] Opened with a concise "What It Does" overview that explains the feature in plain language.
 
 - [ ] Confirmed how players enable the feature and captured the exact settings path.
 - [ ] Listed every on-page setting (goals, templates, filters) with default behavior.

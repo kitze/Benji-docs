@@ -1,0 +1,202 @@
+---
+title: "⏰ Fasting"
+description: Track intermittent fasting with live timers, streak counting, and goal-based progress monitoring
+---
+
+## ✨ What It Does
+
+The Fasting feature helps you track intermittent fasting periods with real-time countdowns, automatic streak calculations, and flexible goal setting. Start a fast with a single tap, watch your progress through a visual ring display, and build momentum with streak tracking that rewards consistency. Fasting data integrates into your dashboard widgets, timeline posts, and summary views, giving you a complete picture of your fasting routine without manual calculations or spreadsheets.
+
+## 🚪 Access & Activation
+
+Enable Fasting from `Settings → Features → Fasting` and link to the [Enabling Features guide](/docs/enabling-features).
+
+## 🧭 Core Workflow
+
+**Starting a Fast:**
+- Tap "Start a fast" from the main Fasting page or My Day dashboard widget
+- Set your goal in hours (defaults to your preferred fasting duration)
+- Adjust the start time if needed (defaults to current time)
+- Confirm to begin tracking
+
+**During a Fast:**
+- View live countdown in widgets showing hours and minutes remaining
+- Check progress ring that fills as you approach your goal
+- See your current streak displayed with a flame icon
+- Access from dashboard widgets, sidebar, or header bar
+
+**Ending a Fast:**
+- Tap "End" on any fasting widget or the main page
+- The app calculates your total fasting duration
+- If you met your goal (duration ≥ goal), it counts toward your streak
+- A timeline post announces your completion with success percentage
+
+**Editing Past Fasts:**
+- View fasts grouped by month in the main Fasting page
+- Tap any fast card to edit start time, end time, or goal
+- Each card shows fasted hours, goal duration, and success percentage
+- Ring indicators provide quick visual feedback on completion
+
+## ⚙️ Settings Inside the Feature
+
+**Default Fasting Goal:**
+- Set your preferred fasting duration (1-168 hours)
+- Access via the settings icon on the Fasting page
+- This becomes the default goal when starting new fasts
+- You can override it for individual fasts at start time
+
+**Monthly Calendar View:**
+- The Fasting page displays a calendar with progress circles for each day
+- Navigate between months to review your fasting history
+- Each day shows a ring indicating your fasting activity
+
+## 🔐 Global Settings & Privacy
+
+**Privacy Controls:**
+- Timeline posts for fasting are set to **Private by default**
+- Change visibility at `Settings → Privacy → Fasting`
+- Options: Private, Followers Only, or Everyone
+- Applies to both "started fast" and "completed fast" posts
+
+**Feature Settings:**
+- Adjust your default fasting goal at `Settings → Features → Fasting`
+- Goal range: 1-168 hours (defaults to 16 hours)
+- Changes apply to future fasts; existing fasts retain their original goals
+
+## 📊 Widgets & Dashboards
+
+**My Day Widget:**
+- Shows active fast with animated progress ring
+- Displays time remaining in "Xh Ym left" format
+- Current streak count with flame icon
+- "Start Fast" button when no fast is active
+- "End" button during active fast
+- "Last fast completed" status after finishing
+
+**Sidebar Widget:**
+- Compact view with clock icon
+- Shows countdown: "Xh Ym left"
+- Clickable to navigate to Fasting page
+
+**Desktop Header Widget:**
+- Displays countdown until fast ends
+- Right-click for quick actions (edit, delete)
+- Tooltip: "Time until your fasting ends"
+- One-click navigation to Fasting page
+
+**Adding Widgets:**
+- My Day widget: Appears automatically when Fasting is enabled
+- Sidebar widget: Shows when you have an active fast
+- Header widget: Displays in the top bar during active fasts
+
+## ⚡ Alfred & Quick Actions
+
+For general Alfred/Spotlight usage, see the [Alfred & Spotlight guide](/docs/alfred-spotlight).
+
+**Fasting-Specific Actions:**
+- Open Alfred (`⌘K` or `Cmd+K`)
+- Type "Settings → Fasting" to access feature settings
+- Navigate directly to `/my/fasts` by typing "fasting" in Alfred
+
+The Fasting feature uses the main UI for starting and ending fasts rather than Alfred commands—tap "Start a fast" or "End" buttons on the dashboard or Fasting page.
+
+## ⌨️ Keyboard Shortcuts
+
+The Fasting feature primarily uses on-screen buttons and widgets rather than dedicated keyboard shortcuts.
+
+**Related Global Shortcuts:**
+- `⌘K` (Cmd+K): Open Alfred/Spotlight to navigate to Fasting page
+- `⌘B` (Cmd+B): Toggle sidebar to show/hide the fasting sidebar widget
+
+## 🏆 Timeline, Points & Privacy
+
+**Timeline Posts:**
+
+When you **start a fast**, an automatic post is created:
+- Format: "I'm starting a [X]hr fast! 🥳"
+- Default audience: Private
+- Editing the fast updates the timeline post
+
+When you **complete a fast**:
+- **Success** (duration ≥ goal): "I completed a [X]hr [Y]min fast! 🎉"
+- **Incomplete** (duration < goal): "I failed to complete my [X]hr fast after [Y]hr [Z]min 😞"
+- Default audience: Private
+- Awards 5 points on completion (regardless of success)
+
+**Point Value:**
+- Completing a fast: **5 points**
+- Points are awarded when you end a fast, not when you start
+- No bonus points for exceeding your goal
+
+**Privacy Settings:**
+- Navigate to `Settings → Privacy → Fasting`
+- Default: **Private** (only you see your posts)
+- Change to **Followers Only** to share with your followers
+- Change to **Everyone** for fully public posts
+- Privacy setting applies to both start and completion posts
+
+**Public Fasting Users:**
+- If your fasting privacy is set to Everyone, you appear in the "Public Fasting Users" list
+- This shows the 10 most recent active fasts (within 72 hours)
+- Other users can see your fasting activity on your profile
+
+## 🔗 Integrations & Dependencies
+
+**Dashboard Integration:**
+- Fasting widgets appear on the My Day dashboard when the feature is enabled
+- Active fasts display in sidebar and header bar for quick access
+- Calendar view integrates fasting data into monthly overviews
+
+**Timeline & Social:**
+- Fasting posts appear in your personal timeline
+- If privacy is set to public or followers, posts appear in follower feeds
+- Posts link back to individual fasts for details
+
+**Streak Calculation:**
+- Streaks count consecutive days with completed fasts ≥ 14 hours
+- A fast must meet or exceed 14 hours to maintain your streak
+- Missing a day or completing a fast under 14 hours resets the streak
+- Current streak displays on My Day widget and main Fasting page
+
+**Timezone Handling:**
+- All fasting times respect your account timezone setting
+- Start and end times display in your local timezone
+- Calendar views group fasts by day according to your timezone
+- Changing timezone does not retroactively adjust past fasts
+
+## 💡 Tips & Edge Cases
+
+**Building Consistent Streaks:**
+- Set realistic goals—14+ hours counts toward streaks
+- Use the sidebar widget to monitor progress without opening the full page
+- Calendar view helps identify patterns and plan fasting schedules
+
+**Handling Interruptions:**
+- If you need to end a fast early, tap "End" to record the actual duration
+- Incomplete fasts still appear in your history and timeline
+- Edit past fasts if you forgot to end them at the correct time
+
+**Multiple Fasts Per Day:**
+- You can only have one active fast at a time
+- After ending a fast, start a new one whenever you're ready
+- Each fast is tracked separately in your monthly view
+
+**Goal Flexibility:**
+- Override your default goal at start time for special occasions
+- Longer goals (e.g., 24-48 hours) work for extended fasts
+- Maximum goal: 168 hours (one week)
+
+**Editing Historical Data:**
+- Tap any fast card to adjust start/end times or goals
+- Useful if you forgot to end a fast or logged incorrect times
+- Editing updates timeline posts automatically
+
+**Widget Visibility:**
+- If widgets aren't showing, check that Fasting is enabled in `Settings → Features`
+- Sidebar and header widgets only appear during active fasts
+- My Day widget can be removed/re-added in dashboard customization settings
+
+**Privacy for Beginners:**
+- Fasting posts default to Private—you control when to share
+- Test the feature privately before making posts public
+- Change privacy settings anytime at `Settings → Privacy → Fasting`
