@@ -1,0 +1,163 @@
+---
+title: "📅 Planner"
+description: Schedule events, time-block your day, and coordinate shared calendars
+---
+
+## ✨ What It Does
+
+Planner transforms your calendar into a command center for your day. Drop in meetings, time-block deep work, schedule habits and routines, and coordinate with teammates—all from a flexible grid that shifts between day, week, month, and agenda views. Events can pull in travel time, link to todos, and even post countdowns to your timeline so you never miss what matters.
+
+## 🚪 Access & Activation
+
+Enable Planner from `Settings → Features → Planner`. See the [Enabling Features guide](/docs/enabling-features) for details on feature toggles and visibility options.
+
+Once enabled, you can access Planner from:
+- **Keyboard shortcut**: `Alt/Option + C` toggles the planner drawer
+- **Desktop header**: click the calendar widget showing today's date
+- **Sidebar navigation**: click "Planner" in the main menu
+
+## 🧭 Core Workflow
+
+### Creating Events
+
+Click any empty time slot in the calendar to create a timed event at that hour, or use the **+** button to open the event form. You can also use the quick-add shortcut (`Cmd/Ctrl + K` or `Q`) to create events from anywhere.
+
+**Event types include:**
+- **Regular Event** – Standard calendar appointment with time, location, and notes
+- **Time Block** – Organizational container that groups related todos into a focused work session
+- **Todo** – Links an existing todo or creates a new one on-the-fly and schedules it
+- **Routine** – Schedules an entire routine sequence with all its durations calculated
+- **Habit** – Drops a habit into the calendar so you can visualize when it happens
+
+### Editing & Managing Events
+
+- **Click once** to select an event and open quick details
+- **Double-click** to jump into the full editor
+- **Right-click** (or long-press on mobile) for the context menu with move, duplicate, and delete options
+- Press `Enter` or `Cmd/Ctrl + S` to save changes
+
+### Views
+
+Switch between four calendar perspectives using the toolbar or keyboard shortcuts:
+- **D** – Day view shows an hourly grid for the selected date
+- **W** – Week view displays seven columns side-by-side
+- **M** – Month view gives you the traditional calendar grid
+- **A** – Agenda view lists upcoming events in chronological order
+
+Use `Alt/Option + Plus` or `Alt/Option + Minus` to zoom in and out on the time slots, adjusting how much vertical space each hour takes.
+
+## 🗂️ Planner Lists & Organization
+
+Create personal lists to organize events by project, category, or team. Lists live in the sidebar, divided into **My Lists** (ones you created) and **Shared with me** (lists others invited you to).
+
+- **Toggle visibility** by clicking the eye icon next to a list, or use number keys `1–9` to toggle lists by their index position
+- **Assign colors** to lists so events inherit that color and stand out at a glance
+- **Filter by view** – each list can be shown or hidden per calendar view (day, week, month, agenda) so you only see what's relevant in each context
+
+### Sharing Lists
+
+Share a list with teammates by opening its settings and sending an invite. You control what each person can do:
+- **Can Create** – Add new events to the list
+- **Can Edit** – Modify existing events
+- **Can Delete** – Remove events
+- **Can View Details** – See full event information
+
+Invitations appear in the recipient's sidebar once accepted, and they'll see all events from that list overlaid on their calendar.
+
+## ⚙️ In-Feature Settings
+
+### Event Fields
+
+Every event supports:
+- **Title & Emoji** – Name and icon to make it recognizable
+- **Start/End Times** – Or toggle **All-Day** for events without specific hours
+- **Location** – Text field for where the event happens
+- **Travel Before/After** – Type (car, bus, train, walk, bike, other) and duration so Benji can buffer time around the event
+- **Unconfirmed** – Mark events awaiting confirmation on exact timing
+- **Side Event** – Indicate an event runs during another (e.g., repairman visit while you work from home)
+- **Description/Note** – Rich text field for extra context
+- **List Assignment** – Attach the event to a specific planner list
+- **Color** – Custom color override (independent of list color)
+- **Category** – Work or Personal (currently stored for future filtering)
+- **Countdown** – Display this event as a countdown on your timeline
+
+### Recurrence
+
+Set events to repeat using preset patterns:
+- Not Repeat (default)
+- Daily
+- Weekly
+- Bi-weekly
+- Monthly
+- Yearly
+- Custom RRULE (advanced recurrence syntax for complex patterns)
+
+Recurring events appear across all instances in the calendar. When editing or deleting, you'll be asked whether to apply changes to **this occurrence only**, **all instances**, or **all future instances**.
+
+## 🔐 Global Settings & Privacy
+
+- **List sharing** respects the permissions you set per collaborator—events are visible only when the list is visible and the user has the right access level
+- **Countdown timeline posts** inherit your general timeline privacy settings and can be toggled off by unchecking **Show as countdown** on the event
+
+There's no system-wide planner privacy toggle; visibility is managed per list and per event type.
+
+## 📊 Widgets & Dashboards
+
+### Upcoming Events Widget
+
+Add the **Upcoming Events** widget to your dashboard from `My Day` settings. It shows events from the next several days (you control how many) and can include:
+- Recurring events (toggle on/off)
+- Contact birthdays (pulled from your contacts)
+- All-day events (toggle on/off)
+- Events from both personal and shared lists
+
+The widget links directly to the planner so you can jump in and adjust schedules.
+
+### Desktop Header Widget
+
+The formatted current date in the desktop header doubles as a planner shortcut—click it to open or close the planner drawer instantly.
+
+## ⚡ Alfred & Quick Actions
+
+Learn more about Alfred in the [Alfred & Spotlight guide](/docs/alfred-spotlight).
+
+- **Create a new event**: opens the event creation form
+- **Quick add** (`Q`): fast event entry from anywhere
+- Search for events or lists to jump directly to them
+
+## ⌨️ Keyboard Shortcuts
+
+| Shortcut | Action |
+|----------|--------|
+| `Alt/Option + C` | Toggle planner drawer |
+| `D` | Switch to Day view |
+| `W` | Switch to Week view |
+| `M` | Switch to Month view |
+| `A` | Switch to Agenda view |
+| `Alt/Option + Plus` | Zoom in (increase slot height) |
+| `Alt/Option + Minus` | Zoom out (decrease slot height) |
+| `1–9` | Toggle list visibility by index |
+| `Enter` | Save event when editing |
+| `Cmd/Ctrl + S` | Save event when editing |
+
+## 🏆 Timeline & Points
+
+- Events marked with **Show as countdown** create a timeline post displaying the countdown timer until the event starts
+- Countdown posts respect your general timeline privacy settings
+- Removing the countdown flag or deleting the event removes the associated post
+
+## 🔗 Integrations & Dependencies
+
+- **Todos**: Link events to todos and adjust their planned date/duration directly from the planner. Time blocks organize multiple todos into one calendar slot.
+- **Habits & Routines**: Schedule habits and routines in the calendar; durations auto-calculate so you know exactly how much time each block requires.
+- **Contacts**: Birthdays from your contacts appear in the Upcoming Events widget when enabled, and you can link events to specific contacts.
+- **Summary Page**: Enable `Show planner` in the summary sidebar to display upcoming events alongside your other daily metrics.
+
+## 💡 Tips & Edge Cases
+
+- **Duplicate events** from the context menu (right-click) when you need a similar event with minor tweaks—saves time over creating from scratch.
+- **Travel buffers** are especially useful for back-to-back meetings; setting "Travel After" on the first event and "Travel Before" on the second ensures you're not double-booked during transit.
+- **Number keys** make toggling lists instant—arrange your most important lists in the top positions for quick visibility switches.
+- **All-day events** sit above the hourly grid and don't interfere with timed slots, perfect for birthdays, deadlines, or holidays.
+- **Recurring event exceptions**: when you skip or reschedule a single instance, Benji tracks that exclusion so future occurrences remain intact.
+- **Shared list permissions** let you grant teammates visibility without full edit rights—great for broadcasting availability or sharing meeting schedules.
