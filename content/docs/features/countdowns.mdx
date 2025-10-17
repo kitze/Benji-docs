@@ -1,0 +1,74 @@
+---
+title: "⏳ Countdowns"
+description: Track days until important events and milestones
+---
+
+## ✨ What It Does
+
+Countdowns helps you track upcoming events—birthdays, deadlines, trips, launches, or anything else you're anticipating. Each countdown shows the days remaining in a clean, visual format, and you can tie them to planner events so dates stay synchronized. Whether you're building excitement for a vacation or monitoring project milestones, Countdowns keeps those dates front and center without cluttering your calendar.
+
+## 🚪 Access & Activation
+
+Enable Countdowns from `Settings → Features → Countdowns`. See the [Enabling Features guide](/docs/enabling-features) for details on feature toggles and visibility options.
+
+## 🧭 Core Workflow
+
+- Click **Add countdown** to open the creation form. Set a title, choose an optional emoji, pick a date, and save.
+- Each countdown displays in a card with a circular badge showing days remaining, your chosen emoji, and a status label ("in X days", "Today", or "Done").
+- Click any countdown card to edit its details or delete it. All fields can be updated at any time.
+- By default, countdowns automatically disappear from your widgets once the target date passes. If you want a countdown to stick around after it expires—say you're waiting for event photos or final results—check **Show until marked as done** when creating or editing it. This adds a "Done" checkbox you can tick manually to remove the countdown from your list.
+
+### 🗓️ Linking to Planner Events
+
+- Countdowns can connect to events in your planner. When creating or editing a countdown, open the **Select an existing event** dropdown and choose the relevant planner event.
+- Once linked, the countdown inherits the event's title, emoji, and start date. You can't edit those fields directly on the countdown anymore—update the planner event instead, and the countdown will reflect the changes automatically.
+- Clicking a linked countdown opens the planner event editor, not the countdown editor, so you manage everything from one place.
+- Linking is optional—standalone countdowns work perfectly fine for dates that don't need planner integration.
+
+## 🔐 Global Settings & Privacy
+
+- Feature visibility lives under `Settings → Features → Countdowns`, where you can toggle sidebar and mobile presence or enable the home widget.
+- Countdowns are entirely private—there's no timeline posting, no sharing options, and no public visibility. They're personal reminders designed for your eyes only.
+
+## 📊 Widgets & Dashboards
+
+### Countdowns Widget (Multi-Item)
+
+- Add this widget to your **My Day** home dashboard to see all active countdowns in a compact list.
+- Each item displays the emoji, title, and days remaining, ordered by date (earliest first).
+- Clicking any countdown navigates to the main Countdowns page where you can edit or review details.
+- The widget automatically filters out expired countdowns unless they're marked with **Show until marked as done**.
+
+### Single Countdown Widget
+
+- For prominent tracking of one specific countdown, add the **Single Countdown Widget** to My Day.
+- Open widget settings to choose which countdown to display, select a shape style (**Circles**, **Squares**, **Squircles**, or **Lines**), and toggle whether the date appears below the title.
+- The widget centers a large emoji, the countdown title, and the days-remaining status, making it perfect for high-stakes deadlines or exciting milestones.
+- Clicking the widget opens the countdown editor so you can adjust details without leaving your dashboard.
+- Use the **+** button in widget settings to quickly create a new countdown if the one you need doesn't exist yet.
+
+## ⚡ Alfred & Quick Actions
+
+Learn more about Alfred in the [Alfred & Spotlight guide](/docs/alfred-spotlight).
+
+- **Create a new countdown**: opens the countdown creation form
+- Search for existing countdowns to jump directly to the editor
+
+## ⌨️ Keyboard Shortcuts
+
+- `Cmd/Ctrl + K`: open Alfred to access Countdowns commands
+- Countdowns don't have dedicated global shortcuts beyond Alfred—use `Cmd + K` and type "Create a new countdown" for fast access.
+
+## 🔗 Integrations & Dependencies
+
+- **Planner Integration**: Link countdowns to planner events so titles, emojis, and dates stay synchronized. When the planner event updates, the countdown reflects those changes immediately.
+- **Timezone Respect**: All countdown calculations respect your user timezone settings, so "days remaining" reflects your local day boundaries rather than UTC.
+- Countdowns remain standalone—they don't trigger reminders, chain into routines, or affect other features. They're purely visual trackers.
+
+## 💡 Tips & Edge Cases
+
+- Use **Show until marked as done** for countdowns that represent event start dates rather than end dates—once the event begins, you might need a few more days before marking it complete.
+- Standalone countdowns are great for loose deadlines or personal milestones that don't need planner blocks. Link to planner events when you want durations, reminders, or scheduling alongside the countdown.
+- The Single Countdown Widget works well for high-visibility goals like product launches or trip departures—pick the "Circles" shape and enable "Show Date" for maximum clarity.
+- If a countdown disappears unexpectedly from widgets, check whether the date has passed and whether **Show until marked as done** was enabled. Expired countdowns without that flag hide automatically.
+- Delete old countdowns regularly to keep your list tidy—there's no archive or history view, so completed countdowns just clutter the main page unless you remove them.
