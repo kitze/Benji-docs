@@ -1,0 +1,193 @@
+---
+title: "🧹 Household"
+description: "Track household chores and monitor cleanliness across rooms with automatic scoring"
+---
+
+## ✨ What It Does
+
+Household helps you manage home maintenance by tracking chores across different rooms and floors. Create your home layout, define cleaning tasks with custom intervals, and watch your cleanliness score update automatically as you complete chores. The feature uses color-coded progress indicators to show you at a glance which rooms need attention and which are spotless. It's perfect for maintaining a cleaning routine, sharing household responsibilities with others, or simply staying on top of recurring tasks without forgetting what's due.
+
+## 🚪 Access & Activation
+
+Enable Household from `Settings → Features → Household`, then access it via the Homes page in your navigation menu. For more details on enabling features, see the [Enabling Features guide](/docs/enabling-features).
+
+## 🧭 Core Workflow
+
+Household uses a hierarchical organization: **Homes** → **Floors** → **Rooms** → **Chores**. Here's how to set everything up:
+
+### 🏠 Creating Your First Home
+
+1. Navigate to the **Homes** page
+2. Click **"Add Home"**
+3. Give your home a name (e.g., "My House", "Apartment 204")
+4. Click on the home to open the household cleanliness interface
+
+### 📐 Organizing by Floors (Optional)
+
+If you want to organize rooms by floor or level:
+
+1. In your home's cleanliness page, click **"Add Floor"**
+2. Name your floor (e.g., "First Floor", "Basement", "Upstairs")
+3. Create as many floors as you need
+4. Click on a floor name to edit it
+
+**Note:** Floors are optional—rooms without a floor assignment appear in an "Other" section.
+
+### 🚪 Creating Rooms
+
+1. Within any floor (or in the "Other" section), click **"Add Room"**
+2. Enter a room name (e.g., "Kitchen", "Master Bedroom", "Guest Bath")
+3. The system automatically assigns an appropriate icon based on the name:
+   - Kitchen → chef hat icon
+   - Bedroom → bed icon
+   - Bathroom → bathtub icon
+   - Living room → sofa icon
+   - And many more
+4. Repeat for all rooms in your home
+
+**Tip:** You can reorganize rooms by dragging and dropping them between floors.
+
+### 🧽 Creating Chores
+
+1. In any room card, click **"Add Chore"**
+2. Fill in the chore details:
+   - **Name**: What needs to be done (e.g., "Vacuum floor", "Clean mirror", "Wipe counters")
+   - **Interval (Days)**: How often this chore should be done
+     - 1 = daily
+     - 7 = weekly
+     - 14 = bi-weekly
+     - 30 = monthly
+   - **Importance**: Low, Medium, or High
+3. Save the chore
+
+### ✅ Logging Chore Completions
+
+When you complete a chore:
+
+1. Click the **calendar icon** on the chore
+2. Choose when you completed it:
+   - **Today** - mark as done today
+   - **Yesterday** - mark as done yesterday
+   - **Custom Date** - pick any date from the calendar
+   - **Logs** - view your completion history
+3. The room's cleanliness score updates automatically
+
+**How It Works:**
+- Each chore has a "due date" based on when you last completed it plus the interval
+- When you log a completion after the due date, it counts toward your cleanliness score
+- The system tracks all completions so you can see your cleaning history
+
+## ⚙️ Settings Inside the Feature
+
+### 🧹 Chore Configuration
+
+Each chore has three settings:
+- **Name**: Freeform text describing the task
+- **Interval in Days**: How frequently the chore should be done (any number)
+- **Importance**: Low, Medium, or High priority
+
+### 🔍 Filter Settings
+
+Control what displays on your household page using the filter menu (gear icon in the sidebar):
+
+- **Show completed**: When off, hides chores you've already completed this cycle
+- **Show empty rooms**: When off, hides rooms that don't have any chores yet
+- **Low/Medium/High**: Toggle to show or hide chores of each importance level
+
+These filters help you focus on what needs attention without visual clutter from completed or irrelevant tasks.
+
+### 🏠 Room Organization
+
+- **Edit room names**: Click any room name to rename it
+- **Move rooms between floors**: Drag and drop room cards to reorganize
+- **Edit floor names**: Click any floor name to rename it
+- **Room icons**: Automatically assigned based on room name keywords
+
+## 📊 Understanding Cleanliness Scores
+
+The feature calculates cleanliness percentages at three levels:
+
+### 🚪 Room Cleanliness
+- = (Completed chores / Total chores in room) × 100
+- A chore is "completed" if you've logged it after its due date
+- Color-coded header shows cleanliness at a glance:
+  - **Green** (80%+): Room is clean
+  - **Yellow** (60-80%): Room needs some attention
+  - **Orange** (<60%): Room needs cleaning
+
+### 📐 Floor Cleanliness
+- = Average of all room cleanliness percentages within that floor
+- Shown in the left sidebar for each floor
+
+### 🏠 Overall Household Cleanliness
+- = (Total completed chores / Total chores across entire home) × 100
+- Displayed at the top of the sidebar with a progress bar
+- Gives you a single number representing your whole home's cleanliness
+
+**Example:**
+- Kitchen: 2 of 3 chores done = 67%
+- Bedroom: 3 of 4 chores done = 75%
+- Overall: 5 of 7 chores done = 71%
+
+## 👥 Sharing Household with Others
+
+You can invite household members to share your home:
+
+1. Go to the **Homes** page
+2. Click on your home
+3. Use the **Home Invites** section to invite other users
+4. Invited members can:
+   - View all rooms and chores
+   - Log chore completions
+   - See cleanliness scores
+   - Add and edit chores
+
+This is perfect for roommates, families, or anyone sharing a living space who wants to coordinate cleaning responsibilities.
+
+## 🔐 Privacy
+
+Household data is only visible to the home owner and invited members. Your homes, rooms, and chores are completely private and never shared publicly. There's no timeline integration or social sharing—this feature is strictly for personal and household use.
+
+## 💡 Tips & Edge Cases
+
+**Setting Up Your System:**
+- Start with just the main rooms and core chores—you can always add more later
+- Use realistic intervals based on your actual cleaning habits, not aspirational ones
+- Group similar chores by importance level so you can filter by priority when time is limited
+- Name rooms consistently (e.g., "Main Bathroom" vs. "Master Bath") to ensure proper icon assignment
+
+**Effective Chore Management:**
+- Use short intervals (1-3 days) for high-traffic areas like kitchens
+- Use longer intervals (14-30 days) for low-priority areas like guest rooms
+- Mark chores as High importance if they affect daily life, Low if they're cosmetic
+- Review your chore list monthly and remove tasks you're not actually doing
+
+**Logging Strategy:**
+- Log chores as you complete them—don't batch-log at the end of the week
+- Use the "Yesterday" option when you forgot to log something
+- Check your completion history (Logs button) if you can't remember when you last cleaned something
+- View the calendar menu to see when a chore is next due
+
+**Using Filters Effectively:**
+- Hide completed chores during your cleaning session to focus on what's left
+- Show only High importance chores when you're short on time
+- Hide empty rooms once you've finished setting up to reduce visual noise
+- Toggle "Show completed" back on to see everything and feel accomplished
+
+**Multi-User Coordination:**
+- Use the importance levels as a shared priority system with household members
+- Name chores clearly so everyone knows exactly what needs to be done
+- Check the logs to see who's completing what (if you need to balance workload)
+- Create separate chores for tasks you want different people to own
+
+**Room Organization:**
+- Use floors to separate living spaces if you have a multi-story home
+- Leave rooms in "Other" if floor organization doesn't make sense for your space
+- Drag rooms between floors as your organization system evolves
+- Create "zones" using floor names (e.g., "Upstairs", "Common Areas", "Private Spaces")
+
+**Maintaining Your System:**
+- If a room stays red (low cleanliness) for weeks, consider whether the chore intervals are realistic
+- Archive rarely-used rooms by removing their chores rather than letting scores drop
+- Adjust chore intervals seasonally (e.g., monthly in winter, weekly in summer for outdoor spaces)
+- Use the overall household score as motivation—watching it climb is satisfying
