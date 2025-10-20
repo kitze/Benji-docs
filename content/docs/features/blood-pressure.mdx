@@ -1,0 +1,46 @@
+---
+title: "🩺 Blood Pressure"
+description: Track and monitor your blood pressure readings with automatic health classification
+---
+
+## ✨ What It Does
+
+Blood Pressure gives you a simple way to log systolic and diastolic readings throughout the day, visualize trends over time, and understand how your readings stack up against established health guidelines. Each entry is automatically classified using American Heart Association standards—from Normal to Hypertensive Crisis—so you can spot patterns and share accurate records with your healthcare provider. The feature includes a chart that plots your readings over time, making it easy to see if lifestyle changes are moving your numbers in the right direction.
+
+## 🚪 Access & Activation
+
+Enable Blood Pressure from `Settings → Features → Blood Pressure`. See the [Enabling Features guide](/docs/enabling-features) for details on feature toggles and visibility options.
+
+## 🧭 Core Workflow
+
+- Click **Add log** to create a new blood pressure entry. The form shows three fields: a date picker (defaults to current time), systolic pressure (required), and diastolic pressure (required), plus an optional note field for context like "after morning run" or "medication taken."
+- Enter your systolic reading (the top number, measuring pressure when your heart beats) and diastolic reading (the bottom number, measuring pressure between beats). Both values are recorded in mmHg.
+- Each reading is automatically classified into one of six categories based on your systolic and diastolic values:
+  - **Normal** (green): Systolic ≤120 and Diastolic ≤80
+  - **Elevated** (yellow): Systolic 121–129 and Diastolic ≤80
+  - **Hypertension Stage 1** (orange): Systolic 130–139 or Diastolic 81–89
+  - **Hypertension Stage 2** (red): Systolic 140–179 or Diastolic 90–119
+  - **Hypertensive Crisis** (violet): Systolic ≥180 or Diastolic ≥120
+- Your log page shows a line chart with separate traces for systolic (teal) and diastolic (red/pink) readings over time, so you can spot upward or downward trends at a glance.
+- Below the chart, each reading appears as a card displaying your systolic and diastolic values with a colored category badge, timestamp, and optional note. Logs are grouped by day and sorted newest first.
+
+## ⚙️ Settings Inside the Feature
+
+- **Search**: Type into the search field to filter logs by the text in their notes. Pressure values are not searchable.
+- **Grouping**: Logs are grouped by date (one collapsible section per day) to keep multi-reading days organized.
+- **Edit & Delete**: Click any log card to edit the date, systolic or diastolic values, or note. Use the delete option to remove individual entries, or select multiple logs and bulk delete them.
+
+## 🔐 Timeline, Points & Privacy
+
+- Blood pressure logs remain **completely private**—they do not post to the timeline and do not award points.
+- All readings are visible only to you; there are no sharing, follower, or public visibility options for this feature.
+- This design keeps sensitive health data confidential while you build a reliable record for personal tracking or medical consultations.
+
+## 💡 Tips & Edge Cases
+
+- **Backdate entries**: The date picker allows you to log readings from past days. If you track on paper and enter data later, adjust the timestamp so your chart reflects the actual measurement time.
+- **Consistent timing**: Blood pressure can vary throughout the day. Logging at the same time daily (e.g., every morning before breakfast) makes trends more meaningful.
+- **Note context**: Use the note field to record factors that might influence your reading—medication changes, caffeine intake, stress levels, or exercise—so you can identify correlations when reviewing your chart.
+- **Hypertensive Crisis warnings**: Readings classified as Hypertensive Crisis display a violet badge and suggest seeking immediate medical attention. This is a visual reminder, not an alert system—Benji does not notify you or your doctor automatically.
+- **No unit conversion**: All values are stored and displayed in mmHg (millimeters of mercury). If your monitor displays different units, convert them before logging.
+- **No goals or targets**: The feature focuses on logging and visualization. If you want to track progress toward a specific target range, review your chart regularly and note improvements in your logs.

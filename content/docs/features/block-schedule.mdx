@@ -1,0 +1,103 @@
+---
+title: "🚫 Block Schedule"
+description: Time-based website and app blocking to protect your focus
+---
+
+## ✨ What It Does
+
+Block Schedule gives you scheduled, recurring control over digital distractions. Instead of manually turning on website blockers when you remember, you create time windows—"weekday mornings" or "evening deep work"—and link them to lists of distracting websites or apps. When the schedule activates, those distractions are blocked automatically, keeping you in flow without willpower battles.
+
+## 🚪 Access & Activation
+
+Block Schedule doesn't require feature enablement. Navigate to **Distractions** in the sidebar, then switch to the **Block Schedules** tab to create and manage your schedules.
+
+The Distractions page has three tabs:
+- **Distractions**: Individual websites, apps, or other items you want to block
+- **Block Lists**: Collections of distractions grouped by theme or context
+- **Block Schedules**: Time-based schedules that activate your block lists
+
+## 🧭 Core Workflow
+
+### Creating a Block Schedule
+
+Click **Create schedule** to open the schedule form. You'll configure:
+
+- **Title** (required): Name your schedule so you remember its purpose—"Focus Time", "Social Media Block", "Evening Wind-Down"
+- **Start Time** (required): When the blocking window begins each day (HH:MM format, e.g., "09:00")
+- **End Time** (required): When blocking ends (e.g., "17:00")
+- **Recurrence**: How often this schedule repeats (daily, weekdays only, weekends, custom patterns). Uses the iCalendar RRule format so you can build flexible patterns like "Monday through Friday" or "Every other day"
+- **Color**: Pick a visual accent for the schedule card to help you distinguish schedules at a glance
+- **Strict**: Enable this to lock editing when the schedule is active or starting within one hour—useful if you want to prevent yourself from weakening the block mid-session
+- **Block Lists**: Select one or more block lists containing the distractions to block during this schedule
+
+### Using Block Lists
+
+Block Schedules work by linking to **Block Lists**—reusable collections of distractions. Before creating your first schedule, switch to the **Block Lists** tab and create at least one list:
+
+1. Click **Add Block List** and give it a name ("Social Media", "News Sites", "Shopping")
+2. Add distractions from your master **Distractions** list (websites, apps, or other items)
+3. Save the block list
+
+Now when you create or edit a schedule, you can select that block list from the multi-select dropdown. One schedule can activate multiple block lists, and one block list can be reused across multiple schedules.
+
+### Managing Distractions
+
+Switch to the **Distractions** tab to build your master list of items to block:
+
+- Click **Add Distraction** and enter a website URL, app name, or other identifier
+- Each distraction has a type: Website, App, or Other
+- Once saved, distractions appear in the block list selector
+
+## ⚙️ Settings Inside the Feature
+
+### Strict Mode
+
+When enabled, strict mode prevents you from editing or deleting a schedule while it's:
+- Currently active (between start and end times)
+- Starting within the next hour
+
+If you try to edit a strict schedule during these windows, the card displays: **"Editing is disabled while the schedule is active or starting within the hour"** and disables the Edit/Delete buttons. This feature helps you commit to the block and prevents last-minute weakening of your own rules.
+
+### Lock Computer (Experimental)
+
+The **Lock Computer** checkbox appears in the form but may still be in development. When fully implemented, it would enforce a physical computer lock during the active blocking window.
+
+### Recurrence Patterns
+
+Benji generates scheduling events 30 days before and 30 days after the current week, so you'll see upcoming blocks reflected in advance. Recurrence uses the iCalendar RRule format, which supports:
+- **Daily**: `FREQ=DAILY`
+- **Weekdays only**: `FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR`
+- **Weekends only**: `FREQ=WEEKLY;BYDAY=SA,SU`
+- Custom patterns with timezone support
+
+## 🎴 Schedule Cards & Status Badges
+
+Each schedule displays as a card showing:
+- A colored dot (your custom color)
+- The schedule title
+- Time range (e.g., "09:00 – 17:00")
+- Number of linked block lists (e.g., "2 block lists")
+- Status badges indicating current state
+
+### Status Badges
+
+- **Active** (green): The schedule is currently running—blocks are in effect
+- **Starting soon** (amber): The next occurrence begins within 60 minutes
+- **Strict** (gray): Strict mode is enabled on this schedule
+
+If a schedule is active or starting soon and strict mode is enabled, you'll see the editing restriction message and disabled action buttons.
+
+## 🔍 Searching & Bulk Operations
+
+- **Search**: Type in the search bar to filter schedules by title
+- **Multi-select**: Click the checkbox header to select multiple schedules, then use the bulk delete option to remove several at once
+- **Sort**: Schedules are listed by creation date, with the most recent first
+
+## 💡 Tips & Edge Cases
+
+- **Overlapping schedules**: You can create multiple schedules that overlap in time. Each activates its own block lists independently, so overlaps stack the blocking rules
+- **No block lists required**: You can save a schedule without linking any block lists, but it won't block anything until you add at least one list
+- **Editing before activation**: Make changes to your schedule at least one hour before it starts if strict mode is enabled—otherwise you'll be locked out until the block window ends
+- **Reusable block lists**: Build themed block lists ("Work Distractions", "Entertainment", "Shopping") and mix-and-match them across different schedules to avoid recreating the same distraction groups
+- **Custom recurrence**: If daily or weekday patterns don't fit your workflow, use the RRule syntax to create custom schedules like "every Monday and Thursday" or "first weekday of each month"
+- **Timezone awareness**: Recurrence rules respect your timezone settings, so schedules trigger at the correct local time even if you travel or adjust your system clock
