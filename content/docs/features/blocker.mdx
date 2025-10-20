@@ -1,0 +1,163 @@
+---
+title: "🚫 Blocker"
+description: "Block distracting websites and apps with flexible time-based schedules"
+---
+
+## ✨ What It Does
+
+Blocker helps you stay focused by managing distracting websites and applications. You define individual distractions (like social media sites or games), group them into themed block lists, and create time-based schedules that automatically activate your blocks during work hours, deep focus sessions, or any recurring time period you choose. It's perfect for creating distraction-free zones in your day without requiring constant willpower.
+
+## ⚠️ Current Status
+
+**The Blocker feature is currently in configuration-only mode.** You can set up your distractions, block lists, and schedules now, but the actual blocking enforcement won't take effect until the desktop app blocking feature goes live.
+
+Right now, Blocker stores all your configurations and displays schedule status (Active, Starting soon), but it won't actually block websites or applications yet. The enforcement mechanism—which will run through the Benji desktop app—is fully built but intentionally paused until the feature is ready for release.
+
+**What this means for you:**
+- Set up your complete blocking system now to be ready when it launches
+- Test your schedules and timing to make sure they fit your routine
+- Organize your distractions and block lists while you have time to think clearly
+- When the desktop app feature goes live, your blocks will immediately start working with zero additional setup
+
+## 🚪 Access & Activation
+
+Enable Blocker from `Settings → Features → Blocker`, then access it via the Distractions page in your navigation menu. For more details on enabling features, see the [Enabling Features guide](/docs/enabling-features).
+
+## 🧭 Core Workflow
+
+Blocker uses a three-tier system: **Distractions** → **Block Lists** → **Block Schedules**. You'll work through these in order:
+
+### 1️⃣ Creating Distractions
+
+A distraction is a single website, app, or other item you want to block.
+
+1. Open the Distractions page
+2. Go to the **Distractions** tab
+3. Click "Add Distraction"
+4. Enter the distraction (e.g., "reddit.com", "Twitter.app", "YouTube")
+5. Select the type:
+   - **Website** - for URLs and domains
+   - **App** - for desktop applications
+   - **Other** - for custom items
+6. Toggle **Exact match** if you want precise matching (e.g., "twitter.com" only, not "mobile.twitter.com")
+7. Save
+
+**Exact Match Explained:**
+- **Off** (default): Pattern matching—blocks variations and subdomains
+- **On**: Blocks only the exact text you entered
+
+### 2️⃣ Creating Block Lists
+
+Block lists group related distractions together so you can activate multiple blocks at once.
+
+1. Go to the **Block Lists** tab
+2. Click "Add Block List"
+3. Give it a descriptive name (e.g., "Social Media", "Gaming Sites", "News Sites")
+4. Select which distractions to include from your list
+5. Save
+
+**Tips:**
+- You can create block lists without any distractions and add them later
+- Create new distractions on-the-fly while building your list
+- One distraction can appear in multiple block lists
+
+### 3️⃣ Creating Block Schedules
+
+Block schedules define when your block lists should be active.
+
+1. Go to the **Block Schedules** tab
+2. Click "Create schedule"
+3. Give it a title (e.g., "Work Hours", "Evening Focus", "Weekday Mornings")
+4. Set your **Start time** and **End time**
+5. Define **Recurrence** (optional):
+   - Daily
+   - Specific weekdays (e.g., Monday-Friday)
+   - Weekly patterns
+   - Custom recurrence rules
+6. Pick a **Color** to visually identify the schedule (optional)
+7. Select which **Block lists** to activate during this schedule
+8. Toggle **Strict mode** if you want to prevent editing while the schedule is active or starting within an hour
+9. Save
+
+**Schedule Features:**
+- Create one-time or recurring blocks
+- Link multiple block lists to a single schedule
+- Color-code schedules for easy identification
+- Use strict mode to commit to your focus time
+
+## ⚙️ Settings Inside the Feature
+
+Each component has its own configuration:
+
+### Distraction Settings
+- **Type**: Website, App, or Other
+- **Exact match**: Enables precise URL/app name matching
+
+### Block List Settings
+- **Name**: Descriptive label for the group
+- **Distractions**: Which items to include (can be empty)
+
+### Block Schedule Settings
+- **Title**: Schedule name
+- **Time range**: Start and end times
+- **Recurrence**: When the schedule repeats (RRULE format)
+- **Color**: Visual identifier (hex color)
+- **Block lists**: Which lists activate during this schedule
+- **Strict mode**: Prevents editing when active or starting soon
+- **Lock Computer**: Optional setting to lock your computer during blocks
+
+**Strict Mode Behavior:**
+When strict mode is enabled on a schedule, you won't be able to edit or delete that schedule when:
+- The schedule is currently active
+- The schedule starts within the next hour
+
+This helps you commit to your focus time without giving yourself an easy out.
+
+## 🗓️ Understanding Schedule Status
+
+Your block schedules show real-time status indicators:
+
+- **Active** (green badge): The schedule is currently running—blocks are in effect right now
+- **Starting soon** (amber badge): The schedule begins within the next hour
+- **Strict** (gray badge): Editing is disabled when active or starting soon
+
+Each schedule card displays:
+- The schedule title with a colored accent dot
+- Start and end times
+- Number of linked block lists
+- Current status badges
+
+## 🔐 Privacy
+
+All blocker data—distractions, block lists, and schedules—is completely private. Nothing you configure is visible to other users or shared publicly. The feature is designed for personal focus management, not social accountability.
+
+## 💡 Tips & Edge Cases
+
+**Building Your Block System:**
+- Start with a few high-impact distractions rather than trying to block everything at once
+- Create separate block lists for different contexts (e.g., "Work Distractions" vs. "Evening Distractions")
+- Use recurring schedules for consistent routines (e.g., Monday-Friday 9am-5pm)
+
+**Effective Scheduling:**
+- Stack multiple block lists in a single schedule for comprehensive blocking
+- Use colors to distinguish between different types of focus time
+- Create overlapping schedules if you need different block combinations at different times
+
+**Pattern Matching:**
+- Leave "Exact match" off for sites with multiple subdomains (e.g., "reddit.com" will catch "old.reddit.com", "www.reddit.com", etc.)
+- Enable "Exact match" when you need surgical precision (e.g., blocking "youtube.com" but not "youtu.be")
+
+**Strict Mode Strategy:**
+- Enable strict mode on schedules you're serious about—it prevents you from disabling blocks in a moment of weakness
+- Use non-strict schedules for flexible focus sessions where you might need to adjust on the fly
+- Remember: strict mode prevents editing an hour before the schedule starts, so plan ahead
+
+**Organizing Distractions:**
+- Use the search bar when you have many distractions configured
+- Regularly review and remove distractions you're no longer tempted by
+- Consider creating both "heavy" block lists (everything) and "light" versions (just the worst offenders)
+
+**Schedule Management:**
+- If you need to edit a strict schedule that's active, you'll need to wait until it ends or delete and recreate it
+- Test new schedules in non-strict mode first to make sure the timing works for your routine
+- Use recurrence patterns to automate your focus blocks—set it once, and let it run
