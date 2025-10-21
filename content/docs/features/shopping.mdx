@@ -1,0 +1,281 @@
+---
+title: "🛒 Shopping"
+description: "Manage shopping lists and auto-generate items from meal plans with smart categorization"
+---
+
+## ✨ What It Does
+
+Shopping transforms meal planning into organized grocery lists with automatic ingredient aggregation. Select which meals you're cooking this week, and Shopping combines all recipe ingredients into a single, categorized list—automatically combining quantities when the same ingredient appears in multiple recipes. As you shop, mark items as purchased or flag hard-to-find items. The feature organizes everything with visual categories, emoji icons, and smart AI assistance for categorization. Perfect for weekly meal prep, shared household shopping, or maintaining a running inventory of pantry staples.
+
+## 🚪 Access & Activation
+
+Enable Shopping from `Settings → Features → Shopping`, then access it via **Meals & Shopping → Shopping** in your navigation. For more details on enabling features, see the [Enabling Features guide](/docs/enabling-features).
+
+## 🧭 Core Workflow
+
+### 🛍️ Adding Items to Your Shopping List
+
+**Method 1: Manual Entry**
+1. Go to the Shopping page
+2. Click the **"Add"** button (top-right)
+3. Search for an item in the dialog that opens
+4. If it exists, select it to add to your shopping list
+5. If it doesn't exist, type the name and click to create a new item
+6. Optionally add a description for clarity (e.g., "Organic only" or "From bakery section")
+7. The item appears in your **"To buy"** section
+
+**Method 2: Generate from Meal Plan**
+1. Go to **Meals & Shopping → Meal Plan**
+2. Drag recipes into meal slots throughout your week
+3. Click **"Generate shopping list"** (top-right button with shopping cart icon)
+4. Select which days to include (defaults to all days checked)
+5. Review the aggregated ingredients—quantities automatically combine when the same item appears in multiple recipes
+6. Click **"Add items to shopping list"**
+7. All ingredients appear in your Shopping page, ready to buy
+
+### 📦 Organizing Items by Status
+
+Shopping divides items into three sections:
+
+**"To buy"** - Items you need to purchase
+- This is where new items start
+- Your active shopping list
+
+**"Bought"** - Items you've acquired
+- Successfully purchased items
+- In stock at home
+
+**"Cannot find"** - Items that are difficult to locate
+- Mark items stores don't carry
+- Saves time on future shopping trips
+- Flag for alternative sourcing
+
+### ✅ Marking Items While Shopping
+
+**Desktop:**
+- **Left-click** any item in "To buy" → moves to "Bought"
+- **Left-click** any item in "Bought" → moves back to "To buy"
+- **Ctrl/Cmd+Click** item in "To buy" → moves to "Cannot find"
+- **Ctrl/Cmd+Click** item in "Cannot find" → moves back to "To buy"
+- **Right-click** → opens context menu with all move options
+
+**Mobile:**
+- **Tap** item to toggle between "To buy" ↔ "Bought"
+- **Long-press** item → opens menu with all status options
+- Choose "Move to..." from the menu
+
+### 🎴 Using the Revision Screen
+
+The Revision screen provides a fast, card-based interface for triaging items:
+
+1. Click **"Revision"** button (top-right)
+2. Review one item at a time on large cards
+3. **Swipe left** (or drag left past threshold) → "Have at home" (moves to Bought)
+4. **Swipe right** (or drag right past threshold) → "Add to cart" (moves to To buy)
+5. Progress tracker shows how many items remain
+6. Toggle "Show only 'always need at home' ingredients" to focus on pantry staples
+
+This is perfect for quickly reviewing a long list or preparing for your shopping trip.
+
+## ⚙️ Settings Inside the Feature
+
+### 🎨 Sort Mode
+
+Click the gear icon to access settings, then choose your sort preference:
+
+**Alphabetical (A-Z)**
+- Groups all items under one "All Items" section
+- Sorted by name
+- Simplest view
+
+**Category**
+- Groups items by shopping category (Fruits 🍎, Vegetables 🥕, Meat 🥩, etc.)
+- Shows category names with emoji headers
+- Reveals **"Reorder Categories"** button to customize category order
+- Drag and drop categories to match your store layout
+
+**Tip:** Use Category mode to match your grocery store's layout—put Produce first if you shop produce first, etc.
+
+### 🔍 Filters
+
+**Show/Hide Ingredient Lists**
+- Each ingredient list you create appears as a checkbox
+- Toggle to show only items from specific lists
+- Example: Hide "Household Items" when grocery shopping, show only "Groceries"
+
+**Always Need at Home Filter**
+- Toggle "Show only 'always need at home' items"
+- Focuses on pantry staples you want to keep in stock
+- Mark items as "always need at home" to build a running staples list
+
+### 👥 Shopping Mode
+
+**Alone** (default)
+- Standard mode with manual refresh
+- No automatic updates
+
+**Together**
+- Enables auto-refresh every 10 seconds
+- Perfect when shopping with a partner or household member
+- Both people see real-time updates as items are marked
+- One person can shop while another manages the list from home
+
+### 📋 Ingredient Lists
+
+Create multiple lists to organize different types of shopping:
+
+1. Go to **Meals & Shopping → Lists** tab
+2. Click to create a new ingredient list
+3. Name it (e.g., "Groceries", "Household Items", "Pet Supplies")
+4. Optionally add an emoji icon
+5. Assign items to lists when creating them
+
+**Use Cases:**
+- Separate grocery items from household supplies
+- Create store-specific lists (Costco, Farmers Market, etc.)
+- Organize by shopping frequency (weekly vs. monthly)
+
+## 🤖 AI Features
+
+Shopping includes AI-powered assistance for batch operations:
+
+### Available AI Actions
+
+Access via the custom menu icon (top bar):
+
+**"Generate common"**
+- AI creates common shopping items automatically
+- Useful when starting a new shopping system
+- Generates typical grocery staples
+
+**"Generate custom"**
+- Provide a prompt describing what you need
+- AI generates relevant items
+- Example: "Items for baking cookies" → flour, sugar, chocolate chips, etc.
+
+**"Find missing emoji"**
+- Scans all items without emoji icons
+- AI assigns appropriate emojis automatically
+- Makes your list more visual and scannable
+
+**"Suggest categories"**
+- AI analyzes all uncategorized items
+- Assigns shopping categories (Fruits, Dairy, etc.)
+- Works on entire list at once or single items via context menu
+
+## ⌨️ Keyboard Shortcuts
+
+While Shopping doesn't have dedicated global shortcuts, it supports:
+
+- **Ctrl/Cmd+Click** on any item: Toggle between "To buy" ↔ "Cannot find"
+- **Cmd/Ctrl+K**: Open Alfred (general app command)
+- **ESC**: Close dialogs and modals
+- **Tab**: Navigate form fields
+
+## 🔗 Integrations & Dependencies
+
+### 🍳 Meal Planning Connection
+
+Shopping deeply integrates with Meal Planning:
+
+1. **Plan your meals** in the Meal Plan calendar
+2. **Generate shopping list** aggregates all recipe ingredients
+3. **Quantities combine automatically**:
+   - Recipe A needs 2 tablespoons olive oil
+   - Recipe B needs 1 tablespoon olive oil
+   - Shopping list shows: 3 tablespoons olive oil
+4. **Sub-recipes included**: If a recipe uses another recipe as an ingredient, all nested ingredients are captured
+
+This eliminates manual ingredient counting and ensures you buy exactly what you need for the week.
+
+### 📋 Ingredient Lists
+
+Organize items into named lists:
+- Filter your shopping view by list
+- Share specific lists with household members
+- Keep different shopping contexts separate
+
+### 🏷️ Shopping Categories
+
+15 built-in categories with emoji icons:
+- 🍎 Fruits
+- 🥕 Vegetables
+- 🥩 Meat
+- 🥛 Dairy
+- 🌾 Grains
+- 🥫 Pantry
+- 🍿 Snacks
+- ☕ Beverages
+- 🧊 Frozen
+- 🧁 Bakery
+- 🧂 Spices
+- 🍯 Condiments
+- 🧽 Household
+- 🧴 Personal
+- 📦 Other
+
+## 🔐 Privacy
+
+Shopping data is private by default. You control sharing through **Ingredient Lists**:
+
+- **Private lists**: Only visible to you
+- **Shared lists**: Invite specific people to view and edit
+- **Real-time collaboration**: When shopping together mode is enabled, all members see live updates
+- **No public sharing**: Shopping lists never appear on public profiles or timelines
+
+Share ingredient lists with roommates, family members, or anyone you shop with regularly.
+
+## 💡 Tips & Edge Cases
+
+**Meal Plan Workflow:**
+- Plan your entire week of meals before generating the shopping list—it's much more efficient than generating multiple times
+- Review the preview panel before adding items to catch any ingredients you already have
+- Uncheck days if you're eating out or have leftovers planned
+- Sub-recipes automatically expand, so you don't need to manually trace nested ingredients
+
+**Category Organization:**
+- Reorder categories to match your store's layout for faster shopping
+- Use Category sort mode when shopping to move through the store systematically
+- Use Alphabetical mode when checking if you have something at home
+- AI category suggestions work best after you've categorized a few items manually (it learns your patterns)
+
+**Status Management:**
+- Use "Cannot find" for specialty items that require online ordering or different stores
+- Mark pantry staples as "always need at home" to maintain a running staples list
+- Items in "Bought" stay there until you move them back to "To buy" for next time
+
+**Shopping Together Mode:**
+- Enable "Together" mode before heading to the store with a partner
+- One person can manage the list remotely while the other shops
+- Refresh happens every 10 seconds—no need to manually refresh
+- Perfect for "Did you get milk?" scenarios while shopping
+
+**Revision Screen Efficiency:**
+- Use Revision mode to quickly review a long list before shopping
+- Filter to "always at home" items to rapidly stock-check pantry staples
+- Swipe left for items you have, right for items you need
+- Progress tracker keeps you motivated through long lists
+
+**List Management:**
+- Create separate lists for different stores (Trader Joe's, Costco, Farmers Market)
+- Use the filter checkboxes to focus on one store at a time
+- Share household supply lists with roommates so everyone can add items
+- Keep a "Someday" list for items you want to try but don't need this week
+
+**AI Assistance:**
+- Use "Generate custom" with specific prompts: "Italian dinner party for 8" or "Breakfast meal prep for the week"
+- Run "Find missing emoji" periodically to keep your list visually organized
+- Let AI suggest categories in bulk rather than doing it one-by-one
+- Generate common items when setting up Shopping for the first time
+
+**Mobile Shopping:**
+- Long-press is faster than opening menus on mobile
+- Single tap toggles between "To buy" and "Bought" for quick marking
+- Use your phone's brightness boost feature in dim stores
+- Enable "Together" mode so your list updates live while family members add items from home
+
+**Quantity Aggregation:**
+- When generating from meal plans, identical ingredients combine automatically
+- Different units don't combine (2 tablespoons + 1 cup won't merge)
+- Review aggregated quantities in the preview before adding to avoid over-buying
+- Adjust recipe serving sizes in meal plan before generating to scale ingredient quantities
